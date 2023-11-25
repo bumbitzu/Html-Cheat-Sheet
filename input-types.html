@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Input Types</h1>
+    <p id="main-menu"><a href="index.html">Main Menu</a><p>
+  </header>
+  <main>
+    <div id="up">
+      <a href="#"><img src="./resources/img/up-arrow.png" title="up"/></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#button">&lt;input type="button"&gt;</a></li>
+        <li><a href="#checkbox">&lt;input type="checkbox"&gt;</a></li>
+        <li><a href="#color">&lt;input type="color"&gt;</a></li>
+        <li><a href="#date">&lt;input type="date"&gt;</a></li>
+        <li><a href="#datetime-local">&lt;input type="datetime-local"&gt;</a></li>
+        <li><a href="#email">&lt;input type="email"&gt;</a></li>
+        <li><a href="#file">&lt;input type="file"&gt;</a></li>
+        <li><a href="#hidden">&lt;input type="hidden"&gt;</a></li>
+        <li><a href="#image">&lt;input type="image"&gt;</a></li>
+        <li><a href="#month">&lt;input type="month"&gt;</a></li>
+        <li><a href="#number">&lt;input type="number"&gt;</a></li>
+        <li><a href="#password">&lt;input type="password"&gt;</a></li>
+        <li><a href="#radio">&lt;input type="radio"&gt;</a></li>
+        <li><a href="#range">&lt;input type="range"&gt;</a></li>
+        <li><a href="#reset">&lt;input type="reset"&gt;</a></li>
+        <li><a href="#search">&lt;input type="search"&gt;</a></li>
+        <li><a href="#submit">&lt;input type="submit"&gt;</a></li>
+        <li><a href="#tel">&lt;input type="tel"&gt;</a></li>
+        <li><a href="#text">&lt;input type="text"&gt;</a></li>
+        <li><a href="#time">&lt;input type="time"&gt;</a></li>
+        <li><a href="#url">&lt;input type="url"&gt;</a></li>
+        <li><a href="#week">&lt;input type="week"&gt;</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <section id='button'>
+        <h2>&lt;input type="button"&gt;</h2>
+        <p>The input element with the type="button" attribute is used to create a clickable button on a web page. This type of button doesn't have a predefined behavior associated with it, so you typically need to use JavaScript to define what happens when the button is clicked.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!-- Button with type="button" --&gt;
+&lt;input type="button" value="Click me" onclick="alert('Button clicked!')"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='checkbox'>
+        <h2>&lt;input type="checkbox"&gt;</h2>
+        <p>The input element with type="checkbox" creates a checkbox input on a web page. A checkbox allows users to select or deselect a particular option or multiple options from a set of choices.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!-- Checkbox with type="checkbox" --&gt;
+&lt;input type="checkbox" id="myCheckbox" name="myCheckbox" value="checkboxValue"&gt;
+&lt;label for="myCheckbox"&gt;Check me&lt;/label&gt;
+          </code></pre>
+        </div>
+        <p>When the user interacts with the checkbox (by clicking on it), the state of the checkbox (checked or unchecked) can be determined, and you can use JavaScript to perform actions based on this state.</p>
+        <div class="code">
+          <pre><code class="language-javascript">
+// Example JavaScript to check the state of the checkbox
+var checkbox = document.getElementById("myCheckbox");
+
+checkbox.addEventListener("change", function() {
+  if (checkbox.checked) {
+    alert("Checkbox is checked!");
+  } else {
+    alert("Checkbox is unchecked!");
+  }
+});
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='color'>
+        <h2>&lt;input type="color"&gt;</h2>
+        <p>The input element with type="color" creates a color input on a web page, allowing users to select a color through a graphical interface, often presented as a color picker.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="colorPicker"&gt;Choose a color:&lt;/label&gt;
+&lt;input type="color" id="colorPicker" name="colorPicker" value="#ff0000"&gt;
+          </code></pre>
+        </div>
+        <div class="code">
+          <pre><code class="language-javascript">
+// Example JavaScript to get the value of the color input
+var colorPicker = document.getElementById("colorPicker");
+
+colorPicker.addEventListener("input", function() {
+  var selectedColor = colorPicker.value;
+  console.log("Selected color: " + selectedColor);
+});
+
+          </code></pre>
+        </div>
+        <p>In this JavaScript example, an event listener is added to the color input, and when the user selects a color, the input event is triggered, and the selected color value is logged to the console.</p>
+      </section>
+
+      <section id='date'>
+        <h2>&lt;input type="date"&gt;</h2>
+        <p>The input element with type="date" creates a date input on a web page, allowing users to select a date from a calendar-like interface.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="datePicker"&gt;Select a date:&lt;/label&gt;
+&lt;input type="date" id="datePicker" name="datePicker"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='datetime-local'>
+        <h2>&lt;input type="datetime-local"&gt;</h2>
+        <p>
+          The input element with type="datetime-local" creates a combined date and time input on a web page, allowing users to select both a date and a time.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="datetimePicker"&gt;Select a date and time:&lt;/label&gt;
+&lt;input type="datetime-local" id="datetimePicker" name="datetimePicker"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='email'>
+        <h2>&lt;input type="email"&gt;</h2>
+        <p>The input element with type="email" creates an email input on a web page, specifically designed for users to enter an email address. When you use type="email", the browser usually enforces basic email validation, ensuring that the entered text has a valid email format.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="emailInput"&gt;Enter your email:&lt;/label&gt;
+&lt;input type="email" id="emailInput" name="emailInput" required&gt;
+          </code></pre>
+        </div>
+        <p>You can access the value of the email input using JavaScript:</p>
+        <div class="code">
+          <pre><code class="language-js">
+// Example JavaScript to get the value of the email input
+var emailInput = document.getElementById("emailInput");
+
+emailInput.addEventListener("input", function() 
+{
+  var enteredEmail = emailInput.value;
+  console.log("Entered email: " + enteredEmail);
+});
+
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='file'>
+        <h2>&lt;input type="file"&gt;</h2>
+        <p>The input element with type="file" creates a file input on a web page, allowing users to select and upload files from their local device to a server. This input type is typically used within HTML forms to handle file uploads.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="fileInput"&gt;Choose a file:&lt;/label&gt;
+&lt;input type="file" id="fileInput" name="fileInput"&gt;
+          </code></pre>
+        </div>
+        <p>When the user interacts with the file input, a file dialog is typically displayed, allowing them to browse their local device and select one or more files. The selected file(s) can then be submitted as part of a form to the server.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;form action="/upload" method="post" enctype="multipart/form-data"&gt;
+  &lt;label for="fileInput"&gt;Choose a file:&lt;/label&gt;
+  &lt;input type="file" id="fileInput" name="fileInput"&gt;
+  &lt;button type="submit"&gt;Upload&lt;/button&gt;
+&lt;/form&gt;
+          </code></pre>
+        </div>
+        <p>In this form example, the enctype="multipart/form-data" attribute is important for handling file uploads. The form's action attribute specifies the server endpoint where the file will be sent upon submission, and the method="post" attribute indicates that the form data should be sent using the HTTP POST method.</p>
+        <p>Keep in mind that handling file uploads involves server-side processing, and you'll need a server-side script (such as in PHP, Node.js, Python, etc.) to receive and process the uploaded file.</p>
+      </section>
+
+      <section id='hidden'>
+        <h2>&lt;input type="hidden"&gt;</h2>
+        <p>The input element with type="hidden" creates a hidden input field in a form. Hidden input fields are not visible on the web page, but their values are sent to the server when the form is submitted. They are commonly used to include additional data that the user doesn't need to interact with directly.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;
+
+  &lt;!-- Hidden input for additional data --&gt;
+  &lt;input type="hidden" name="additionalData" value="someValue"&gt;
+
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='image'>
+        <h2>&lt;input type="image"&gt;</h2>
+        <p>The input element with type="image" creates an image input on a web page. It is used to submit a form when the user clicks on the image. When the user clicks on the image, the coordinates of the click are sent to the server as part of the form submission.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;form action="/submit" method="post"&gt;
+  &lt;!-- Submit button as an image --&gt;
+  &lt;input type="image" src="submit_button.png" alt="Submit Form"&gt;
+&lt;/form&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='month'>
+        <h2>&lt;input type="month"&gt;</h2>
+        <p>The input element with type="month" creates a month input on a web page, allowing users to select a specific month and year.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="monthPicker"&gt;Select a month:&lt;/label&gt;
+&lt;input type="month" id="monthPicker" name="monthPicker"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='number'>
+        <h2>&lt;input type="number"&gt;</h2>
+        <p>The input element with type="number" creates a numeric input on a web page, allowing users to enter numerical values. This input type is suitable for fields where only numeric values are expected, such as age, quantity, or any other numeric data.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="quantity"&gt;Enter quantity:&lt;/label&gt;
+&lt;input type="number" id="quantity" name="quantity" min="1" max="100" step="1" value="1"&gt;
+          </code></pre>
+        </div>
+        <p>In this example, the input element creates a number input. The id attribute is used to uniquely identify the input, and the name attribute is used to associate the input with a label. The min, max, and step attributes are optional and can be used to define constraints on the input:</p><br>
+        <p>min: The minimum allowed value.</p>
+        <p>max: The maximum allowed value.</p>
+        <p>step: The step increment when using arrow controls.</p>
+        <p>The value attribute sets the initial value of the input.</p>
+          
+      </section>
+
+      <section id='password'>
+        <h2>&lt;input type="password"&gt;</h2>
+        <p>The input element with type="password" creates a password input on a web page, designed for users to enter confidential information like passwords. The characters entered into a password input are typically masked (e.g., as asterisks or dots) for security reasons.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="password"&gt;Enter password:&lt;/label&gt;
+&lt;input type="password" id="password" name="password"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='radio'>
+        <h2>&lt;input type="radio"&gt;</h2>
+        <p>
+          The input element with type="radio" creates a radio button input on a web page. Radio buttons are often used in groups where users are allowed to select only one option from a set of mutually exclusive choices.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;form&gt;
+  &lt;input type="radio" id="option1" name="group1" value="option1"&gt;
+  &lt;label for="option1"&gt;Option 1&lt;/label&gt;
+
+  &lt;input type="radio" id="option2" name="group1" value="option2"&gt;
+  &lt;label for="option2"&gt;Option 2&lt;/label&gt;
+
+  &lt;input type="radio" id="option3" name="group1" value="option3"&gt;
+  &lt;label for="option3"&gt;Option 3&lt;/label&gt;
+&lt;/form&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='range'>
+        <h2>&lt;input type="range"&gt;</h2>
+        <p>The input element with type="range" creates a slider input on a web page, allowing users to select a value from a range by moving a slider handle.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!-- Range input with type="range" --&gt;
+&lt;label for="volume"&gt;Adjust volume:&lt;/label&gt;
+&lt;input type="range" id="volume" name="volume" min="0" max="100" value="50"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='reset'>
+        <h2>&lt;input type="reset"&gt;</h2>
+        <p>The input element with type="reset" creates a reset button in a form. When this button is clicked, it resets all the form fields to their default values. It essentially undoes any changes made by the user and returns the form to its initial state.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;
+
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+  &lt;input type="password" id="password" name="password"&gt;
+
+  &lt;input type="reset" value="Reset"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='search'>
+        <h2>&lt;input type="search"&gt;</h2>
+        <p>The input element with type="search" creates a search input on a web page. This input type is specifically designed for entering search queries.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="searchQuery"&gt;Search:&lt;/label&gt;
+&lt;input type="search" id="searchQuery" name="searchQuery"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='submit'>
+        <h2>&lt;input type="submit"&gt;</h2>
+        <p>The input element with type="submit" creates a submit button in a form. When this button is clicked, it triggers the submission of the form, sending the form data to the server for processing.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;
+
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+  &lt;input type="password" id="password" name="password"&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='tel'>
+        <h2>&lt;input type="tel"&gt;</h2>
+        <p>The input element with type="tel" creates a telephone input on a web page, intended for users to enter a valid telephone number.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+            &lt;label for="phoneNumber"&gt;Enter phone number:&lt;/label&gt;
+&lt;input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='text'>
+        <h2>&lt;input type="text"&gt;</h2>
+        <p>The input element with type="text" creates a text input on a web page, allowing users to enter any text value.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='time'>
+        <h2>&lt;input type="time"&gt;</h2>
+        <p>The input element with type="time" creates a time input on a web page, allowing users to select a specific time.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="meetingTime"&gt;Select meeting time:&lt;/label&gt;
+&lt;input type="time" id="meetingTime" name="meetingTime"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='url'>
+        <h2>&lt;input type="url"&gt;</h2>
+        <p>
+          The input element with type="url" creates a URL input on a web page, intended for users to enter a valid URL (Uniform Resource Locator). This input type often includes built-in validation to ensure that the entered text follows a valid URL format.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="websiteUrl"&gt;Enter website URL:&lt;/label&gt;
+&lt;input type="url" id="websiteUrl" name="websiteUrl" placeholder="https://example.com"&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id='week'>
+        <h2>&lt;input type="week"&gt;</h2>
+        <p>The input element with type="week" creates a week input on a web page, allowing users to select a specific week and year. This input type typically provides a dropdown or similar interface for users to choose a week.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="weekPicker"&gt;Select a week:&lt;/label&gt;
+&lt;input type="week" id="weekPicker" name="weekPicker"&gt;
+          </code></pre>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"
+    integrity="sha512-9khQRAUBYEJDCDVP2yw3LRUQvjJ0Pjx0EShmaQjcHa6AXiOv6qHQu9lCAIR8O+/D8FtaCoJ2c0Tf9Xo7hYH01Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+    integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

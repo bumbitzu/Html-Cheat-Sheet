@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Html Elements</h1>
+    <p id="main-menu"><a href="index.html">Main Menu</a><p>
+  </header>
+  <main>
+    <div id="up">
+      <a href="#"><img src="./resources/img/up-arrow.png" title="up"/></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#a">&lt;a&gt;</a></li>
+        <li><a href="#abbr">&lt;abbr&gt;</a></li>
+        <li><a href="#adress">&lt;adress&gt;</a></li>
+        <li><a href="#area">&lt;area&gt;</a></li>
+        <li><a href="#article">&lt;article&gt;</a></li>
+        <li><a href="#aside">&lt;aside&gt;</a></li>
+        <li><a href="#audio">&lt;audio&gt;</a></li>
+        <li><a href="#b">&lt;b&gt;</a></li>
+        <li><a href="#base">&lt;base&gt;</a></li>
+        <li><a href="#bdo">&lt;bdo&gt;</a></li>
+        <li><a href="#blockquote">&lt;blockquote&gt;</a></li>
+        <li><a href="#body">&lt;body&gt;</a></li>
+        <li><a href="#br">&lt;br&gt;</a></li>
+        <li><a href="#button">&lt;button&gt;</a></li>
+        <li><a href="#canvas">&lt;canvas&gt;</a></li>
+        <li><a href="#caption">&lt;caption&gt;</a></li>
+        <li><a href="#cite">&lt;cite&gt;</a></li>
+        <li><a href="#code">&lt;code&gt;</a></li>
+        <li><a href="#col">&lt;col&gt;</a></li>
+        <li><a href="#colgroup">&lt;colgroup&gt;</a></li>
+        <li><a href="#data">&lt;data&gt;</a></li>
+        <li><a href="#datalist">&lt;datalist&gt;</a></li>
+        <li><a href="#dd">&lt;dd&gt;</a></li>
+        <li><a href="#del-ins">&lt;del&gt;/&lt;ins&gt;</a></li>
+        <li><a href="#details">&lt;details&gt;</a></li>
+        <li><a href="#dfn">&lt;dfn&gt;</a></li>
+        <li><a href="#dialog">&lt;dialog&gt;</a></li>
+        <li><a href="#div">&lt;div&gt;</a></li>
+        <li><a href="#em">&lt;em&gt;</a></li>
+        <li><a href="#embed">&lt;embed&gt;</a></li>
+        <li><a href="#fieldset">&lt;fieldset&gt;</a></li>
+        <li><a href="#figure">&lt;figure&gt;</a></li>
+        <li><a href="#footer">&lt;footer&gt;</a></li>
+        <li><a href="#form">&lt;form&gt;</a></li>
+        <li><a href="#h1">&lt;h1&gt; to &lt;h6&gt;</a></li>
+        <li><a href="#head">&lt;head&gt;</a></li>
+        <li><a href="#header">&lt;header&gt;</a></li>
+        <li><a href="#hr">&lt;hr&gt;</a></li>
+        <li><a href="#html">&lt;html&gt;</a></li>
+        <li><a href="#i">&lt;i&gt;</a></li>
+        <li><a href="#iframe">&lt;iframe&gt;</a></li>
+        <li><a href="#img">&lt;img&gt;</a></li>
+        <li><a href="#input">&lt;input&gt;</a></li>
+        <li><a href="#kbd">&lt;kbd&gt;</a></li>
+        <li><a href="#label">&lt;label&gt;</a></li>
+        <li><a href="#link">&lt;link&gt;</a></li>
+        <li><a href="#main">&lt;main&gt;</a></li>
+        <li><a href="#map">&lt;map&gt;</a></li>
+        <li><a href="#mark">&lt;mark&gt;</a></li>
+        <li><a href="#menu">&lt;menu&gt;</a></li>
+        <li><a href="#meta">&lt;meta&gt;</a></li>
+        <li><a href="#meter">&lt;meter&gt;</a></li>
+        <li><a href="#nav">&lt;nav&gt;</a></li>
+        <li><a href="#noscript">&lt;noscript&gt;</a></li>
+        <li><a href="#object">&lt;object&gt;</a></li>
+        <li><a href="#ol">&lt;ol&gt;</a></li>
+        <li><a href="#optgroup">&lt;optgroup&gt; and &lt;option&gt;</a></li>
+        <li><a href="#output">&lt;output&gt;</a></li>
+        <li><a href="#p">&lt;p&gt;</a></li>
+        <li><a href="#picture">&lt;picture&gt;</a></li>
+        <li><a href="#pre">&lt;pre&gt;</a></li>
+        <li><a href="#progress">&lt;progress&gt;</a></li>
+        <li><a href="#q">&lt;q&gt;</a></li>
+        <li><a href="#ruby">&lt;ruby&gt;, &lt;rp&gt;, &lt;rc&gt;</a></li>
+        <li><a href="#s">&lt;s&gt;</a></li>
+        <li><a href="#samp">&lt;samp&gt;</a></li>
+        <li><a href="#script">&lt;script&gt;</a></li>
+        <li><a href="#search">&lt;search&gt;</a></li>
+        <li><a href="#section">&lt;section&gt;</a></li>
+        <li><a href="#slot">&lt;slot&gt;</a></li>
+        <li><a href="#small">&lt;small&gt;</a></li>
+        <li><a href="#source">&lt;source&gt;</a></li>
+        <li><a href="#span">&lt;span&gt;</a></li>
+        <li><a href="#strong">&lt;strong&gt;</a></li>
+        <li><a href="#style">&lt;style&gt;</a></li>
+        <li><a href="#sub">&lt;sub&gt;</a></li>
+        <li><a href="#summary">&lt;summary&gt;</a></li>
+        <li><a href="#sup">&lt;sup&gt;</a></li>
+        <li><a href="#table">&lt;table&gt;</a></li>
+        <li><a href="#template">&lt;template&gt;</a></li>
+        <li><a href="#textarea">&lt;textarea&gt;</a></li>
+        <li><a href="#time">&lt;time&gt;</a></li>
+        <li><a href="#title">&lt;title&gt;</a></li>
+        <li><a href="#track">&lt;track&gt;</a></li>
+        <li><a href="#ul">&lt;ul&gt;</a></li>
+        <li><a href="#var">&lt;var&gt;</a></li>
+        <li><a href="#video">&lt;video&gt;</a></li>
+        <li><a href="#wbr">&lt;wbr&gt;</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <section id='a'>
+        <h2>&lt;a&gt; (Anchor)</h2>
+        <p>The element with its href attribute, creates a hyperlink to web pages, files, email addresses,
+          locations in the same page, or anything else a URL can address.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+            &lt;p&gt;This is a paragraph with a &lt;a href="https://www.example.com"&gt;simple hyperlink&lt;/a&gt;.&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+      <section id='abbr'>
+        <h2>&lt;abbr&gt; (Abbreviation)</h2>
+        <p>The element is used to define abbreviations or acronyms in a document. It helps provide a full
+          explanation or expansion of the abbreviated text, often for the benefit of users who may not be
+          familiar with the abbreviation.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code
+            class="language-html">&lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; is a specialized agency of the United Nations.&lt;/p&gt;</code>
+        </div>
+      </section>
+      <section id='adress'>
+        <h2>&lt;adress&gt; (Adress)</h2>
+        <p> The element is used to provide contact information or details about the author or owner of a
+          document. It is often used in the footer of a webpage but can be used in other sections as well.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+  &lt;h1&gt;Contact Information&lt;/h1&gt;
+  &lt;address&gt;
+    &lt;p&gt;Written by John Doe.&lt;/p&gt;
+    &lt;p&gt;Visit us at:&lt;br&gt;
+    123 Main Street&lt;br&gt;
+    Cityville, State, 12345&lt;br&gt;
+    &lt;a href="mailto:john@example.com"&gt;Email: john@example.com&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/address&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='area'>
+        <h2>&lt;area&gt; (Image Map Area)</h2>
+        <p>The element is used within an &lt;map&gt; element to define clickable areas within an image map.
+          Image maps are typically used to create links or hotspots on an image where users can click to
+          navigate to different destinations.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+  &lt;map name="planetmap"&gt;
+  &lt;area shape="rect" coords="0,0,82,126" href="mercury.html" alt="Mercury"&gt;
+  &lt;area shape="circle" coords="90,58,3" href="venus.html" alt="Venus"&gt;
+  &lt;area shape="circle" coords="124,58,8" href="earth.html" alt="Earth"&gt;
+  &lt;!-- Additional areas for other planets can be added here --&gt;
+  &lt;/map&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='article'>
+        <h2>&lt;article&gt; (Article)</h2>
+        <p>The element is used to represent a self-contained piece of content within a document. It could be a
+          news article, blog post, forum post, or any other independent piece of content that can be
+          distributed and reused independently.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;article&gt;
+  &lt;h2&gt;Top Frontend Frameworks in 2023&lt;/h2&gt;
+  &lt;p&gt;As of 2023, the most popular frontend frameworks include...&lt;/p&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Published on &lt;time datetime="2023-11-19"&gt;November 19, 2023&lt;/time&gt; by John Doe&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;          
+          </code></pre>
+        </div>
+      </section>
+      <section id='aside'>
+        <h2>&lt;aside&gt; (Aside)</h2>
+        <p>Description: The element is used to mark content that is tangentially related to the content around
+          it. It is typically used for sidebars, pull quotes, advertisements, or any content that is not the
+          primary focus of the page but provides additional context or information.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;aside&gt;
+  &lt;h2&gt;Related Links&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://www.designguide.com" target="_blank"&gt;Design Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;           
+          </code></pre>
+        </div>
+      </section>
+      <section id='audio'>
+        <h2>&lt;audio&gt; (Audio)</h2>
+        <p>The element is used to embed audio content, such as music or sound effects, into an HTML document. It
+          provides a way to play audio files directly in the browser without requiring a separate player.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h1&gt;Listen to a Sample Track&lt;/h1&gt;
+&lt;audio controls&gt;
+  &lt;source src="sample.mp3" type="audio/mp3"&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='b'>
+        <h2>&lt;b&gt; (Bold)</h2>
+        <p>The element is used to apply bold formatting to the enclosed text. It doesn't carry any semantic
+          meaning on its own and is generally used for presentational purposes when you want to make text
+          visually bold.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+&lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; text example.&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+      <section id='base'>
+        <h2>&lt;base&gt; (Base)</h2>
+        <p>The element is used to specify a base URL for all relative URLs within a document. It provides a way
+          to set a default URL for links, images, and other resources, helping to resolve relative URLs
+          consistently.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;head&gt;
+  &lt;title&gt;Base Example&lt;/title&gt;
+  &lt;base href="https://www.example.com/"&gt;
+&lt;/head&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='bdo'>
+        <h2>&lt;bdo&gt; (Bidirectional Override)</h2>
+        <p>The element is used to override the default direction of text display in languages that are written
+          from right to left (RTL), such as Arabic or Hebrew, or left to right (LTR).</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;This is a normal text paragraph.&lt;/p&gt;
+&lt;p&gt;&lt;bdo dir="rtl"&gt;This text will be displayed from right to left.&lt;/bdo&gt;&lt;/p&gt;
+&lt;p&gt;&lt;bdo dir="ltr"&gt;This text will be displayed from left to right.&lt;/bdo&gt;&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='blockquote'>
+        <h2>&lt;blockquote&gt; (Block Quotation)</h2>
+        <p>The element is used to represent a block of text that is a direct quotation from another source. It
+          typically indents the content to visually distinguish it from the surrounding text.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;This is a paragraph of regular text.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This is a blockquote, indicating a quotation from another source.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is another paragraph of regular text following the blockquote.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='body'>
+        <h2>&lt;body&gt; (Body)</h2>
+        <p>The element is a fundamental part of an HTML document. It contains all the content that is visible to
+          the user, such as text, images, links, scripts, and more. It represents the main content of the
+          document.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;title&gt;Document Title&lt;/title&gt;
+  &lt;/head&gt;             
+  &lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;section&gt;
+    &lt;h2&gt;About Us&lt;/h2&gt;
+    &lt;p&gt;This is the main content of the website...&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;footer&gt;
+    &lt;p&gt;&copy; 2023 My Website&lt;/p&gt;
+  &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;             
+          </code></pre>
+        </div>
+      </section>
+      <section id='br'>
+        <h2>&lt;br&gt; (Line Break)</h2>
+        <p> The element is used to insert a line break in the document, forcing the content following the
+          &lt;br&gt; tag to appear on a new line. It is a void element, meaning it doesn't have a closing tag.
+        </p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;p&gt;This is another paragraph with a line break.&lt;br&gt;
+The content following the line break appears on a new line.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='button'>
+        <h2>&lt;button&gt; (Button)</h2>
+        <p> The element represents a clickable button, which can be used to trigger actions or submit forms. It
+          can contain text, images, or other HTML content. The functionality of the button is typically
+          defined using JavaScript or by associating it with a form.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h1&gt;Click the Button&lt;/h1&gt;
+  &lt;button onclick="myFunction()"&gt;Click Me&lt;/button&gt;
+  &lt;script&gt;
+    function myFunction() 
+    {
+      alert("Button clicked!");
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='canvas'>
+        <h2>&lt;canvas&gt; (Canvas)</h2>
+        <p>The element is used to create a drawing surface on a web page. It provides a container for graphics,
+          animations, and other visual content that can be manipulated using JavaScript. The element itself is
+          empty and requires JavaScript to draw and update its content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h1&gt;Canvas Example&lt;/h1&gt;
+
+  &lt;canvas id="myCanvas" width="300" height="150"&gt;&lt;/canvas&gt;
+
+  &lt;script&gt;
+  // Get the canvas element
+  var canvas = document.getElementById("myCanvas");
+
+  // Get the 2D rendering context
+  var context = canvas.getContext("2d");
+
+  // Draw a rectangle on the canvas
+  context.fillStyle = "#FF0000"; // Set fill color to red
+  context.fillRect(20, 20, 150, 100); // Draw a rectangle
+
+  // Draw a text on the canvas
+  context.font = "20px Arial";
+  context.fillStyle = "#000";
+  context.fillText("Hello, Canvas!", 30, 120);
+  &lt;/script&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='caption'>
+        <h2>&lt;caption&gt; (Table Caption)</h2>
+        <p> The element is used to provide a caption or title for a table. It should be placed immediately after
+          the opening table tag, and it helps in providing context or a summary for the content of the table.
+        </p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;table&gt;
+  &lt;caption&gt;Monthly Sales Report&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Sales&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$10,000&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;February&lt;/td&gt;
+    &lt;td&gt;$12,500&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;!-- Additional table rows can be added here --&gt;
+&lt;/table&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='cite'>
+        <h2>&lt;cite&gt; (Citation)</h2>
+        <p>The element is used to reference the title of a creative work (such as a book, movie, or song) or the
+          name of a person to be cited. It is often used within the context of citing sources in academic
+          writing.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;The book &lt;cite&gt;The Great Gatsby&lt;/cite&gt; by F. Scott Fitzgerald is a classic of American literature.&lt;/p&gt;
+&lt;p&gt;In his speech, John mentioned the famous quote from Shakespeare's play &lt;cite&gt;Hamlet&lt;/cite&gt;.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='code'>
+        <h2>&lt;code&gt; (Code)</h2>
+        <p>The element is used to define a piece of computer code within the text. It is typically used to
+          represent code snippets, programming instructions, or any text that should be treated as code. The
+          browser usually renders the text inside &lt;code&gt; in a monospaced (fixed-width) font.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;This is an example of inline code: &lt;code&gt;var x = 10;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;
+  &lt;code&gt;
+  // This is a code block
+  function greet(name) {
+    console.log("Hello, " + name + "!");
+  }
+  greet("World");
+  &lt;/code&gt;
+&lt;/pre&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='col'>
+        <h2>&lt;col&gt; (Table Column element)</h2>
+        <p>The element is used to define properties for a group of columns in a table. It is often used as a
+          child of the &lt;colgroup&gt; element, which allows applying styles and attributes to multiple
+          columns simultaneously.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col style="background-color: lightblue;"&gt;
+    &lt;col span="2" style="background-color: lightgreen;"&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='colgroup'>
+        <h2>&lt;colgroup&gt; (Table Column Group)</h2>
+        <p>The element is used to group a set of &lt;col&gt; elements within a table. It allows you to apply
+          styles and attributes to multiple columns simultaneously.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col style="width: 100px;"&gt;
+    &lt;col style="width: 150px;"&gt;
+    &lt;col style="background-color: lightgreen;"&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='data'>
+        <h2>&lt;data&gt; (Data)</h2>
+        <p>The element is used to represent a piece of content that is intended to be machine-readable but also
+          human-readable. It can be used to encapsulate data values that may be used by software or scripts
+          while still providing meaningful content to users.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+&lt;p&gt;The average temperature is &lt;data value="20.5" title="Average Temperature"&gt;20.5&lt;/data&gt; degrees Celsius.&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+      <section id='datalist'>
+        <h2>&lt;datalist&gt; (Data List)</h2>
+        <p> The element is used in conjunction with the &lt;input&gt; element of type text or search to provide
+          a set of predefined options that users can choose from. It allows you to create an autocomplete
+          functionality for input fields.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;label for="browser"&gt;Choose a browser:&lt;/label&gt;
+  &lt;input list="browsers" id="browser" name="browser" placeholder="Type a browser name"&gt;
+  &lt;datalist id="browsers"&gt;
+    &lt;option value="Chrome"&gt;
+    &lt;option value="Firefox"&gt;
+    &lt;option value="Safari"&gt;
+    &lt;option value="Edge"&gt;
+    &lt;option value="Opera"&gt;
+  &lt;/datalist&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='dd'>
+        <h2>&lt;dd&gt; (Description Definition)</h2>
+        <p>The element is used in conjunction with the &lt;dl&gt; (definition list) and &lt;dt&gt; (description
+          term) elements to define the description or definition part of a term-description pair in the list.
+          It typically follows the &lt;dt&gt; element and provides the detailed information or description
+          associated with the term.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language is the standard markup language for creating web pages.&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets is used for styling the visual presentation of web pages.&lt;/dd&gt;
+    &lt;!-- Additional term-description pairs can be added here --&gt;
+  &lt;/dl&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='del-ins'>
+        <h2>&lt;del&gt;/&lt;ins&gt; (Deleted Text / Inserted Tex)</h2>
+        <p>The &lt;del&gt; element is used to represent text that has been deleted or removed from a document. It is
+          typically used in conjunction with the &lt;ins&gt; (inserted text) element to indicate changes made
+          to the content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;p&gt;This is an &lt;del&gt;old&lt;/del&gt; version of the document.&lt;/p&gt;
+  &lt;p&gt;Check the &lt;ins&gt;latest&lt;/ins&gt; version for updates.&lt;/p&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='details'>
+        <h2>&lt;details&gt; (Details)</h2>
+        <p>The element is used to create a disclosure widget from which the user can obtain additional
+          information or controls. It is often used in combination with the &lt;summary&gt; element, which
+          represents a summary or a heading for the content within the &lt;details&gt; element.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;details&gt;
+  &lt;summary&gt;Click to view details&lt;/summary&gt;
+  &lt;p&gt;This is additional information that can be expanded or collapsed.&lt;/p&gt;
+&lt;/details&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='dfn'>
+        <h2>&lt;dfn&gt; (Definition Term)</h2>
+        <p>The element is used to represent the defining instance of a term within a document. It is often used
+          to highlight and semantically mark the term that is being defined. This is especially useful in
+          technical or academic content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+&lt;p&gt;The &lt;dfn title="World Wide Web"&gt;WWW&lt;/dfn&gt; is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs).&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+      <section id='dialog'>
+        <h2>&lt;dialog&gt; (Dialog)</h2>
+        <p>The element is used to create a dialog box or modal within a web page. It is typically used to
+          present information, receive user input, or confirm an action. The content inside the element is
+          usually styled as a floating box that overlays the rest of the page.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Dialog Example&lt;/title&gt;
+    &lt;style&gt;
+      /* Style for the dialog box */
+      dialog {
+        width: 300px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="openDialog()"&gt;Open Dialog&lt;/button&gt;
+    &lt;dialog id="myDialog"&gt;
+      &lt;p&gt;This is a dialog box.&lt;/p&gt;
+      &lt;button onclick="closeDialog()"&gt;Close&lt;/button&gt;
+    &lt;/dialog&gt;
+    &lt;script&gt;
+      function openDialog() 
+      {
+        document.getElementById('myDialog').showModal();
+      }
+      function closeDialog() 
+      {
+        document.getElementById('myDialog').close();
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='div'>
+        <h2>&lt;div&gt; (Division)</h2>
+        <p>The element is a generic container used to group and structure content within an HTML document. It is
+          a block-level element that does not carry any semantic meaning on its own but can be styled using
+          CSS and manipulated with JavaScript. The element is commonly used to create divisions or sections
+          within a webpage.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;             
+  &lt;head&gt;
+    &lt;title&gt;Div Example&lt;/title&gt;
+    &lt;style&gt;
+      /* Styles for demonstration purposes */
+      .container 
+      {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px;
+      }
+    
+      .box {
+        background-color: #f0f0f0;
+        padding: 10px;
+        margin: 5px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;h2&gt;Container Section&lt;/h2&gt;
+      &lt;p&gt;This is a container with some content.&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="box"&gt;
+      &lt;h3&gt;Box Section&lt;/h3&gt;
+      &lt;p&gt;This is a box with some content.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;           
+&lt;/html&gt;            
+          </code></pre>
+        </div>
+      </section>
+      <section id='em'>
+        <h2>&lt;em&gt; (Emphasis)</h2>
+        <p>The element is used to indicate emphasis, typically causing the enclosed text to be displayed in italics. It is commonly used to emphasize a portion of text, providing a way to convey importance or stress within the context of the document.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+            &lt;p&gt;This is a &lt;em&gt;very important&lt;/em&gt; point in the document.&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+      <section id='embed'>
+        <h2>&lt;embed&gt; (Embed)</h2>
+        <p> The element is used to embed external content or plugins, such as multimedia elements like audio or video players, Java applets, PDF viewers, and more, directly into an HTML document.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h2&gt;Embedded Video&lt;/h2&gt;
+&lt;embed src="video.mp4" width="400" height="300" type="video/mp4"&gt;
+&lt;h2&gt;Embedded Flash Game&lt;/h2&gt;
+&lt;embed src="game.swf" width="600" height="400" type="application/x-shockwave-flash"&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='fieldset'>
+        <h2>&lt;fieldset&gt; (Field Set)</h2>
+        <p>The element is used to group related elements within a form and provide a visual and semantic separation. It is often accompanied by the &lt;legend&gt; element, which serves as a caption or title for the grouped content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Fieldset Example&lt;/title&gt;
+    &lt;style&gt;
+      /* Style for demonstration purposes */
+      fieldset {
+        border: 2px solid #ddd;
+        padding: 10px;
+        margin: 10px 0;
+      }              
+      legend {
+        font-weight: bold;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;              
+  &lt;body&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;Contact Information&lt;/legend&gt;
+      &lt;label for="name"&gt;Name:&lt;/label&gt;
+      &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;            
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input type="text" id="email" name="email"&gt;&lt;br&gt;
+    &lt;/fieldset&gt;              
+  &lt;/body&gt;
+&lt;/html&gt;
+            
+          </code></pre>
+        </div>
+      </section>
+      <section id='figure'>
+        <h2>&lt;figure&gt; (Figure)</h2>
+        <p> The element is used to encapsulate any content that is referenced as a single unit, such as an image, a diagram, a code snippet, or a video, along with its optional caption (&lt;figcaption&gt;). It provides a way to semantically group and associate related content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;            
+  &lt;head&gt;
+    &lt;title&gt;Figure Example&lt;/title&gt;
+    &lt;style&gt;
+      /* Style for demonstration purposes */
+      figure {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px;
+      }            
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;            
+  &lt;body&gt;
+    &lt;figure&gt;
+      &lt;img src="example.jpg" alt="An example image"&gt;
+      &lt;figcaption&gt;Figure 1: An example image&lt;/figcaption&gt;
+    &lt;/figure&gt;            
+    &lt;figure&gt;
+      &lt;code&gt;console.log("Hello, World!");&lt;/code&gt;
+      &lt;figcaption&gt;Figure 2: A code snippet&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/body&gt;            
+&lt;/html&gt;          
+          </code></pre>
+        </div>
+      </section>
+      <section id='footer'>
+        <h2>&lt;footer&gt; (Footer)</h2>
+        <p>The element is used to represent the footer of a section or a page. It typically contains metadata, copyright information, links to related documents, authorship details, or any content that is considered as the closing part of the document or a specific section.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;p&gt;This is the main content of the website.&lt;/p&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2023 My Website | Designed by John Doe&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='form'>
+        <h2>&lt;form&gt; (Form)</h2>
+        <p>The element is used to create an HTML form that allows users to input data, which can be submitted to a server for processing. It serves as a container for various form elements, such as input fields, checkboxes, radio buttons, buttons, and more.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h2&gt;Contact Us&lt;/h2&gt;
+&lt;form action="/submit-form" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+  &lt;label for="message"&gt;Message:&lt;/label&gt;
+  &lt;textarea id="message" name="message" rows="4" required&gt;&lt;/textarea&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='h1'>
+        <h2>&lt;h1&gt; to &lt;h6&gt; (Headings)</h2>
+        <p>These elements represent headings with varying levels of importance, where &lt;h1&gt; is the highest and &lt;h6&gt; is the lowest. They are used to structure and organize content, providing a hierarchy of information.
+          <ul>
+            <li>&lt;h1&gt; : Heading 1 (Highest Level)</li>
+            <li>&lt;h2&gt; : Heading 2</li>
+            <li>&lt;h3&gt; : Heading 3</li>
+            <li>&lt;h4&gt; : Heading 4</li>
+            <li>&lt;h5&gt; : Heading 5</li>
+            <li>&lt;h6&gt; : Heading 6 (Lowest Level)</li>
+          </ul>
+          
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h1&gt;Main Heading&lt;/h1&gt;
+  &lt;p&gt;This is the main content...&lt;/p&gt;          
+  &lt;h2&gt;Subheading 1&lt;/h2&gt;
+  &lt;p&gt;Additional content...&lt;/p&gt;          
+  &lt;h3&gt;Subheading 2&lt;/h3&gt;
+  &lt;p&gt;More content...&lt;/p&gt;          
+  &lt;!-- Continue with additional headings as needed --&gt;
+  
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='head'>
+        <h2>&lt;head&gt; (Head)</h2>
+        <p>The element is a container for metadata and other head elements within an HTML document. It includes information about the document, such as the title, character encoding, linked stylesheets, scripts, and more. The content inside the <head> section is not displayed on the web page but is essential for document structure, search engine optimization, and proper rendering.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Head Example&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="description" content="An example HTML document with metadata"&gt;
+    &lt;meta name="keywords" content="HTML, metadata, example"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;          
+  &lt;body&gt;
+    &lt;h1&gt;Main Content&lt;/h1&gt;
+    &lt;p&gt;This is the main content of the document.&lt;/p&gt;
+  &lt;/body&gt;            
+&lt;/html&gt;            
+          </code></pre>
+        </div>
+      </section>
+      <section id='header'>
+        <h2>&lt;headre&gt; (Header)</h2>
+        <p>The element is used to define a header section for a document or a section of a document. It typically contains headings, logos, navigation menus, and other introductory content for the document or a specific section.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website. Explore and enjoy!&lt;/p&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;p&gt;This is the main content of the website...&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='hr'>
+        <h2>&lt;hr&gt; (Horizontal Rule)</h2>
+        <p>The element is used to create a horizontal rule or line, typically to visually separate content within a document. It is a self-closing tag, and it doesn't have any content. The appearance of the line may vary based on the browser's default styles or additional styles applied through CSS.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Horizontal Rule Example&lt;/title&gt;
+    &lt;style&gt;
+      /* Style for demonstration purposes */
+      hr {
+        border: 1px solid #ddd;
+        margin: 20px 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;This is some content above the horizontal rule.&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;This is some content below the horizontal rule.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;            
+          </code></pre>
+        </div>
+      </section>
+      <section id='html'>
+        <h2>&lt;html&gt; (Html)</h2>
+        <p>The element is the root element of an HTML document. It wraps all the content on the entire page, including the &lt;head&gt; and &lt;body&gt; sections. It serves as the container for the entire document and provides information about the document's version (HTML5) through the &lt;!DOCTYPE html&gt; declaration.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+  &lt;head&gt;
+    &lt;title&gt;HTML Example&lt;/title&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML document.&lt;/p&gt;
+  &lt;/body&gt;
+
+&lt;/html&gt;            
+          </code></pre>
+        </div>
+      </section>
+      <section id='i'>
+        <h2>&lt;i&gt; (Italic Text)</h2>
+        <p>The element is used to define text that is in an alternative voice or mood, such as emphasizing a word or indicating a technical term. By default, it often renders the text in italics, but its semantic meaning is to convey a change in voice rather than a specific styling.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+            &lt;p&gt;This is a &lt;i&gt;italicized&lt;/i&gt; word in a sentence.&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+      <section id='iframe'>
+        <h2>&lt;iframe&gt; (Inline Frame)</h2>
+        <p> The element is used to embed an independent HTML document within the current document. It is commonly used for including external content such as maps, videos, or other web pages. The src attribute specifies the source URL of the embedded content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h2&gt;Embedded Google Map&lt;/h2&gt;
+  &lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195210.7892585281!2d-74.118086495249!3d40.7058256306467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1619618256652!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='img'>
+        <h2>&lt;img&gt; (Image)</h2>
+        <p>The element is used to embed images in an HTML document. It is a self-closing tag that does not have a closing tag. The src attribute specifies the source URL (file path or URL) of the image, and the alt attribute provides alternative text that is displayed if the image cannot be loaded.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h2&gt;Embedded Image&lt;/h2&gt;
+&lt;img src="example.jpg" alt="A sample image"&gt;
+&lt;h2&gt;Image with Width and Height&lt;/h2&gt;
+&lt;img src="example.jpg" alt="Another image" width="300" height="200"&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='input'>
+        <h2>&lt;input&gt; (Input)</h2>
+        <p> The element is used to create various types of form controls that allow users to enter data or make selections. The type of input control is specified by the type attribute. Common input types include text fields, checkboxes, radio buttons, and more.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h2&gt;Text Input&lt;/h2&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;
+
+  &lt;h2&gt;Checkbox&lt;/h2&gt;
+  &lt;label for="subscribe"&gt;Subscribe to newsletter:&lt;/label&gt;
+  &lt;input type="checkbox" id="subscribe" name="subscribe" value="yes"&gt;
+
+  &lt;h2&gt;Radio Buttons&lt;/h2&gt;
+  &lt;label for="male"&gt;Male:&lt;/label&gt;
+  &lt;input type="radio" id="male" name="gender" value="male"&gt;
+  
+  &lt;label for="female"&gt;Female:&lt;/label&gt;
+  &lt;input type="radio" id="female" name="gender" value="female"&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='kbd'>
+        <h2>&lt;kbd&gt; (Keyboard Input)</h2>
+        <p>The element is used to define text that represents user input from the keyboard, such as keyboard keys, key combinations, or any other kind of text entered through the keyboard.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;To open the developer tools in most browsers, press &lt;kbd&gt;F12&lt;/kbd&gt; or &lt;kbd&gt;Ctrl + Shift + I&lt;/kbd&gt;.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='label'>
+        <h2>&lt;label&gt; (Label)</h2>
+        <p> The element is used to associate a label with a form control, providing a user-friendly description or name for the control. It is beneficial for accessibility and usability, as clicking on the label can focus or activate the associated form control.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+  &lt;input type="password" id="password" name="password"&gt;
+  &lt;label for="subscribe"&gt;
+    &lt;input type="checkbox" id="subscribe" name="subscribe"&gt; Subscribe to newsletter
+  &lt;/label&gt;
+  &lt;br&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='link'>
+        <h2>&lt;link&gt; (Link)</h2>
+        <p>The element is used to link external resources to an HTML document. It is commonly used to link stylesheets, icons, or other external documents. The href attribute specifies the URL of the linked resource, and the rel attribute indicates the relationship between the current document and the linked resource.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;          
+  &lt;head&gt;
+    &lt;title&gt;Link Example&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+    &lt;link rel="icon" type="image/png" href="favicon.png"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is the main content of the website...&lt;/p&gt;
+  &lt;/body&gt;            
+&lt;/html&gt;            
+          </code></pre>
+        </div>
+      </section>
+      <section id='main'>
+        <h2>&lt;main&gt; (Main)</h2>
+        <p> The element is used to represent the main content of an HTML document. It typically contains the primary content of the document, excluding headers, footers, and sidebars. The <main> element is useful for improving accessibility and allowing screen readers to navigate directly to the main content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Website Header&lt;/h1&gt;
+  &lt;/header&gt;            
+  &lt;main&gt;
+    &lt;h2&gt;Main Content&lt;/h2&gt;
+    &lt;p&gt;This is the main content of the website...&lt;/p&gt;
+  &lt;/main&gt;            
+  &lt;footer&gt;
+    &lt;p&gt;© 2023 My Website&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='map'>
+        <h2>&lt;map&gt; (Map)</h2>
+        <p>The element is used in conjunction with the &lt;area&gt; element to create an image map. An image map allows different regions of an image to be clickable, leading to different destinations or actions.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h2&gt;Clickable Image Map&lt;/h2&gt;
+  &lt;img src="worldmap.jpg" alt="World Map" usemap="#worldmap"&gt;
+
+  &lt;map name="worldmap"&gt;
+    &lt;area shape="rect" coords="0,0,200,100" href="north-america.html" alt="North America"&gt;
+    &lt;area shape="rect" coords="200,0,400,100" href="europe.html" alt="Europe"&gt;
+    &lt;area shape="rect" coords="400,0,600,100" href="asia.html" alt="Asia"&gt;
+    &lt;!-- Add more areas as needed --&gt;
+  &lt;/map&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='mark'>
+        <h2>&lt;mark&gt; (Mark)</h2>
+        <p> The element is used to highlight or mark portions of text within the content. It is typically rendered with a background color to distinguish the marked text. The element is often used to indicate search results, annotations, or other relevant portions of the content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;This is a &lt;mark&gt;highlighted&lt;/mark&gt; portion of text.&lt;/p&gt;
+&lt;p&gt;Another example with &lt;mark&gt;multiple&lt;/mark&gt; marks in a paragraph.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='menu'>
+        <h2>&lt;menu&gt; (Menu)</h2>
+        <p>The element represents a group of commands or links, providing a list of options for the user. It is typically used in conjunction with the &lt;menuitem&gt; element to create menus for context menus, toolbars, or other types of interactive controls.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;menu type="context" id="context-menu"&gt;
+  &lt;menuitem label="Cut" icon="cut.png"&gt;&lt;/menuitem&gt;
+  &lt;menuitem label="Copy" icon="copy.png"&gt;&lt;/menuitem&gt;
+  &lt;menuitem label="Paste" icon="paste.png"&gt;&lt;/menuitem&gt;
+&lt;/menu&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='meta'>
+        <h2>&lt;meta&gt; (Meta)</h2>
+        <p> The element is used to provide metadata about an HTML document. Metadata includes information such as the character encoding, viewport settings, keywords, and description of the document. Meta tags are placed within the &lt;head&gt; section of an HTML document.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;            
+  &lt;head&gt;
+    &lt;title&gt;Meta Example&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="An example HTML document with metadata"&gt;
+    &lt;meta name="keywords" content="HTML, metadata, example"&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML document.&lt;/p&gt;
+  &lt;/body&gt;            
+&lt;/html&gt;          
+          </code></pre>
+        </div>
+      </section>
+      <section id='meter'>
+        <h2>&lt;meter&gt; (Meter)</h2>
+        <p>The element is used to represent a measurement within a given range. It is often used to display a gauge, progress bar, or other visual representation of a value relative to a known range. The value attribute specifies the current value of the measurement, and the <span id="attr-min" class="attr">min</span> and <span id="attr-max" class="attr">max</span> attributes define the minimum and maximum values of the range.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;Storage Usage: &lt;meter value="60" min="0" max="100"&gt;60%&lt;/meter&gt;&lt;/p&gt;
+&lt;p&gt;Temperature: &lt;meter value="25" min="-20" max="40"&gt;25°C&lt;/meter&gt;&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='nav'>
+        <h2>&lt;nav&gt; (Navigation Section)</h2>
+        <p>The element is used to define a navigation section within an HTML document. It typically contains navigation links, menus, or any other elements that facilitate navigating to different parts of the website or external resources.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;h1&gt;Main Content&lt;/h1&gt;
+  &lt;p&gt;This is the main content of the website...&lt;/p&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='noscript'>
+        <h2>&lt;noscript&gt; (Noscript)</h2>
+        <p>The element is used to provide alternative content that should be displayed if a browser does not support or has disabled JavaScript. The content within the element is only rendered when JavaScript is not available or enabled in the user's browser.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h1&gt;Website Content&lt;/h1&gt;
+  &lt;noscript&gt;
+    &lt;p&gt;This website requires JavaScript to be enabled for full functionality.&lt;/p&gt;
+  &lt;/noscript&gt;
+  &lt;!-- Content that requires JavaScript --&gt;
+  &lt;script&gt;
+    document.write('&lt;p&gt;Dynamic content with JavaScript.&lt;/p&gt;');
+  &lt;/script&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='object'>
+        <h2>&lt;object&gt; (Object)</h2>
+        <p>The element is used to embed external resources, such as images, videos, or other media, into an HTML document. It provides a way to include content that can be displayed by browsers that support plugins, such as Flash or Java.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h2&gt;Embedded Video&lt;/h2&gt;
+  &lt;object width="400" height="300" data="example.mp4" type="video/mp4"&gt;
+    &lt;p&gt;Your browser does not support the video tag. You can download the video &lt;a href="example.mp4"&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;/object&gt;
+
+  &lt;h2&gt;Embedded Flash Animation&lt;/h2&gt;
+  &lt;object width="400" height="300" data="example.swf" type="application/x-shockwave-flash"&gt;
+    &lt;p&gt;Your browser does not support Flash content. You can download the Flash animation &lt;a href="example.swf"&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;/object&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='ol'>
+        <h2>&lt;ol&gt; (Ordered List)</h2>
+        <p> The element is used to create an ordered list in HTML. An ordered list represents a list of items where each item is preceded by a numerical or alphabetical marker. Each item in the list is represented by an &lt;li&gt; (list item) element.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h2&gt;Steps to Make a Sandwich&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Get the ingredients:&lt;/li&gt;
+  &lt;li&gt;Spread condiments on the bread:&lt;/li&gt;
+  &lt;li&gt;Add fillings:&lt;/li&gt;
+  &lt;li&gt;Put the slices together:&lt;/li&gt;
+  &lt;li&gt;Cut the sandwich (optional):&lt;/li&gt;
+&lt;/ol&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='optgroup'>
+        <h2>&lt;optgroup&gt; / &lt;option&gt; (Option Group and Option)</h2>
+        <p>The &lt;optgroup&gt; element is used within a &lt;select&gt; element to group together related &lt;option&gt; elements. It helps organize and structure the options within a dropdown list. The &lt;optgroup&gt; element has a label attribute that specifies the label or title for the group of options.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;label for="fruit"&gt;Select a fruit:&lt;/label&gt;
+&lt;select id="fruit" name="fruit"&gt;
+  &lt;optgroup label="Citrus Fruits"&gt;
+    &lt;option value="orange"&gt;Orange&lt;/option&gt;
+    &lt;option value="lemon"&gt;Lemon&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="Berry Fruits"&gt;
+    &lt;option value="strawberry"&gt;Strawberry&lt;/option&gt;
+    &lt;option value="blueberry"&gt;Blueberry&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='output'>
+        <h2>&lt;output&gt; (Output)</h2>
+        <p>The element is used to represent the result of a user's action or a calculation. It is often used in conjunction with JavaScript to display the outcome of a form submission or other interactive elements. The content of the element is typically generated dynamically.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    &lt;label for="a"&gt;Enter a number:&lt;/label&gt;
+    &lt;input type="range" id="a" name="a" value="50"&gt;
+    
+    &lt;label for="b"&gt;Enter another number:&lt;/label&gt;
+    &lt;input type="number" id="b" name="b" value="50"&gt;
+    
+    &lt;output name="result" for="a b"&gt;Sum: 100&lt;/output&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='p'>
+        <h2>&lt;p&gt; (Paragraph)</h2>
+        <p>The element is used to define a paragraph in HTML. It represents a block of text where the content is typically separated by space and newlines. Browsers typically render paragraphs with space above and below to visually separate them from surrounding content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is the first paragraph of the document. It contains some introductory text.&lt;/p&gt;
+&lt;h2&gt;Main Content&lt;/h2&gt;
+&lt;p&gt;This is another paragraph providing additional information in the main content section.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='picture'>
+        <h2>&lt;picture&gt; (Picture)</h2>
+        <p>The element is used to provide multiple sources for an image and allows the browser to choose the most appropriate one based on factors such as the user's screen size, resolution, and other capabilities. It is commonly used in responsive web design to serve different image files for different scenarios.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;picture&gt;
+  &lt;source media="(min-width: 800px)" srcset="large-image.jpg"&gt;
+  &lt;source media="(min-width: 600px)" srcset="medium-image.jpg"&gt;
+  &lt;img src="small-image.jpg" alt="A responsive image"&gt;
+&lt;/picture&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='pre'>
+        <h2>&lt;pre&gt; (Preformatted Text)</h2>
+        <p> The element is used to define preformatted text in HTML. Text within a element is displayed in a fixed-width font (usually Courier), and whitespace, such as spaces and line breaks, is preserved. This makes it suitable for displaying code snippets, poetry, or any text where formatting and spacing are crucial.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h2&gt;Code Example&lt;/h2&gt;
+  &lt;pre&gt;
+    function greet() {
+      console.log("Hello, World!");
+    }
+    greet();
+  &lt;/pre&gt;
+
+  &lt;h2&gt;Poetry&lt;/h2&gt;
+  &lt;pre&gt;
+    The woods are lovely, dark, and deep,
+    But I have promises to keep,
+    And miles to go before I sleep,
+    And miles to go before I sleep.
+  &lt;/pre&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='progress'>
+        <h2>&lt;progress&gt; (Progress)</h2>
+        <p>The element is used to represent the completion progress of a task. It is often used in situations where the completion status is known or can be determined, such as file uploads or download progress. The value attribute specifies the current completion value, and the max attribute defines the maximum possible value.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;h2&gt;File Upload Progress&lt;/h2&gt;
+  &lt;label for="file"&gt;Select a file:&lt;/label&gt;
+  &lt;input type="file" id="file" name="file"&gt;
+  &lt;br&gt;
+  &lt;progress id="uploadProgress" value="30" max="100"&gt;30%&lt;/progress&gt;
+  &lt;h2&gt;Task Progress&lt;/h2&gt;
+  &lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='q'>
+        <h2>&lt;q&gt; (Inline Quotation)</h2>
+        <p> The element is used to define a short inline quotation in HTML. It is typically used for short, inline quotations within a paragraph or other text. Browsers often add quotation marks around the text enclosed by the element.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+            &lt;p&gt;Albert Einstein once said: &lt;q&gt;Imagination is more important than knowledge.&lt;/q&gt;&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+      <section id='ruby'>
+        <h2>&lt;ruby&gt;, &lt;rp&gt; and &lt;rc&gt; (Ruby Annotation, Ruby Parenthesis and Ruby Text)</h2>
+        <p>The &lt;ruby&gt; element is used to annotate text with pronunciation or additional information about the text. It is often used in East Asian typography to provide pronunciation guides for characters. The &lt;ruby&gt; element is typically used in conjunction with the &lt;rt&gt; (ruby text) and &lt;rp&gt; (ruby parenthesis) elements.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;p&gt;Japanese word for cat: &lt;ruby&gt;猫&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Neko&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;&lt;/p&gt;
+  &lt;p&gt;Chinese character for water: &lt;ruby&gt;水&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Shuǐ&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;&lt;/p&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='s'>
+        <h2>&lt;s&gt; (Strikethrough)</h2>
+        <p>The element is used to represent text that has been strikethrough or marked for deletion. It indicates that the text within the element is no longer accurate or should be ignored. It is often used to visually represent changes in documents, such as edited or deleted content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;This is &lt;s&gt;old&lt;/s&gt; outdated information. Please refer to the latest version.&lt;/p&gt;
+&lt;p&gt;The original price was $100, but it is now on sale for &lt;s&gt;$120&lt;/s&gt; $90.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='samp'>
+        <h2>&lt;samp&gt; (Sample Output)</h2>
+        <p>The element is used to define sample output or examples of computer code in HTML. It is often used to display the output of a program or script within the context of a document. The content within the element is typically displayed in a monospace font.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;Command to display current directory: &lt;samp&gt;pwd&lt;/samp&gt;&lt;/p&gt;
+&lt;p&gt;Sample code output: &lt;samp&gt;Hello, World!&lt;/samp&gt;&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='script'>
+        <h2>&lt;script&gt; (Script)</h2>
+        <p>The element is used to embed or reference JavaScript code within an HTML document. JavaScript is a programming language that allows for dynamic and interactive behavior on web pages. The &lt;script&gt; element can be placed in the &lt;head&gt; or &lt;body&gt; of the HTML document.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Script Example&lt;/title&gt;
+    &lt;script&gt;
+      function greet() {
+        alert('Hello, World!');
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+    &lt;h1&gt;Web Page Content&lt;/h1&gt;
+    &lt;button onclick="greet()"&gt;Click me&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;        
+          </code></pre>
+        </div>
+      </section>
+      <section id='search'>
+        <h2>&lt;search&gt; (Search)</h2>
+        <p>The element is a container representing the parts of the document or application with form controls or other content related to performing a search or filtering operation. The element semantically identifies the purpose of the element's contents as having search or filtering capabilities. The search or filtering functionality can be for the website or application, the current web page or document, or the entire Internet or subsection thereof.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h1&gt;Movie website&lt;/h1&gt;
+&lt;search&gt;
+  &lt;form action="./search/"&gt;
+    &lt;label for="movie"&gt;Find a Movie&lt;/label&gt;
+    &lt;input type="search" id="movie" name="q" /&gt;
+    &lt;button type="submit"&gt;Search&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/search&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='section'>
+        <h2>&lt;section&gt; (Section)</h2>
+        <p>The element is used to define a section in an HTML document. It is a semantic container that helps organize the content into thematic groups. The content within a &lt;section&gt; typically relates to a specific theme or topic, and it is often used in conjunction with heading elements (&lt;h1&gt; to &lt;h6&gt;) to provide structure.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;section&gt;
+    &lt;h2&gt;Introduction&lt;/h2&gt;
+    &lt;p&gt;This is the introduction section of the document.&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;Main Content&lt;/h2&gt;
+    &lt;p&gt;This is the main content section of the document.&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;Conclusion&lt;/h2&gt;
+    &lt;p&gt;This is the conclusion section of the document.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='slot'>
+        <h2>&lt;slot&gt; (Web Component Slot)</h2>
+        <p>The element is used in conjunction with the Shadow DOM to define insertion points where the content can be distributed into a web component. It allows the developer to create customizable and reusable components by providing named slots where content can be assigned.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;my-custom-element&gt;
+    &lt;p slot="content"&gt;This is custom content.&lt;/p&gt;
+  &lt;/my-custom-element&gt;
+
+  &lt;script&gt;
+    customElements.define('my-custom-element', class extends HTMLElement {
+      connectedCallback() {
+        const shadow = this.attachShadow({ mode: 'open' });
+        shadow.innerHTML = `
+          &lt;style&gt;
+            ::slotted(p) {
+              color: green;
+            }
+          &lt;/style&gt;
+          &lt;slot name="content"&gt;&lt;/slot&gt;
+        `;
+      }
+    });
+  &lt;/script&gt;
+&lt;/body&gt;          
+          </code></pre>
+        </div>
+      </section>
+      <section id='small'>
+        <h2>&lt;small&gt; (Side Comment)</h2>
+        <p> The element is used to define smaller text within the content of an HTML document. It is often used to represent fine print, legal text, or any content that should be displayed in a smaller font size without conveying a change in importance.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;MDN Web Docs is a learning platform for Web technologies and the software that powers the Web.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;small&gt;The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.&lt;/small&gt;&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='source'>
+        <h2>&lt;source&gt; (Media or Image Source)</h2>
+        <p>The element is used within the &lt;audio&gt; and &lt;video&gt; elements to specify alternative media resources. It allows you to provide multiple sources for the same media content, ensuring compatibility across different browsers and devices. The browser will choose the first source it supports.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;video width="400" height="300" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.webm" type="video/webm"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='span'>
+        <h2>&lt;span&gt; (Content Span)</h2>
+        <p>The element is an inline container used to group and apply styles to a specific portion of text or inline elements. It doesn't add any semantic meaning on its own but can be useful when you want to target or style a specific part of your content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;            
+  &lt;head&gt;
+    &lt;title&gt;Span Element Example&lt;/title&gt;
+    &lt;style&gt;
+      .highlight {
+        color: red;
+        font-weight: bold;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;          
+  &lt;body&gt;
+    &lt;p&gt;This is a &lt;span class="highlight"&gt;highlighted&lt;/span&gt; word in a sentence.&lt;/p&gt;  
+    &lt;p&gt;&lt;span style="font-style: italic;"&gt;This is italic text.&lt;/span&gt;&lt;/p&gt;
+  &lt;/body&gt;            
+&lt;/html&gt;            
+          </code></pre>
+        </div>
+      </section>
+      <section id='strong'>
+        <h2>&lt;strong&gt; (Strong Importance)</h2>
+        <p>The element is used to define text with strong importance or importance that is more significant than the surrounding text. By default, browsers usually render text within &lt;strong&gt; tags as bold, but the primary purpose is to convey importance rather than styling.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;This is a &lt;strong&gt;strongly emphasized&lt;/strong&gt; statement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Caution:&lt;/strong&gt; Handle with care.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='style'>
+        <h2>&lt;style&gt; (Style Information)</h2>
+        <p>The element is used to embed or link to styles (CSS) within an HTML document. It can be placed in the <head> of the document to define internal styles directly or can be used to link to an external CSS file.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Style Element Example&lt;/title&gt;
+    &lt;style&gt;
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      h1 {
+        color: blue;
+      }            
+      p {
+        margin-bottom: 20px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text on my web page.&lt;/p&gt;
+  &lt;/body&gt;            
+&lt;/html&gt;            
+          </code></pre>
+        </div>
+      </section>
+      <section id='sub'>
+        <h2>&lt;sub&gt; (Subscript)</h2>
+        <p>The element is used to define subscript text in HTML. Subscript text appears smaller and below the baseline of the rest of the text. It is often used for mathematical notations, chemical formulas, or any content where text needs to be displayed in a lower position.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;The chemical formula for water is H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;
+&lt;p&gt;E=mc&lt;sup&gt;2&lt;/sup&gt; describes the equivalence of energy and mass in the theory of relativity.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='summary'>
+        <h2>&lt;summary&gt; (Disclosure Summary)</h2>
+        <p>The element is used in conjunction with the &lt;details&gt; element to provide a summary or caption for a disclosure widget. The &lt;details&gt; element represents a disclosure widget from which the user can obtain additional information or controls by interacting with it. The element provides the visible heading or summary text for the widget.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;details&gt;
+  &lt;summary&gt;Click to see more details&lt;/summary&gt;
+  &lt;p&gt;This is the additional information that can be revealed when the user clicks on the summary.&lt;/p&gt;
+&lt;/details&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='sup'>
+        <h2>&lt;sup&gt; (Superscript)</h2>
+        <p> The element is used to define superscript text in HTML. Superscript text appears smaller and above the baseline of the rest of the text. It is often used for notations, footnotes, or any content where text needs to be displayed in an elevated position.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;The boiling point of water is 100&lt;sup&gt;o&lt;/sup&gt;C.&lt;/p&gt;
+&lt;p&gt;This text contains a superscript &lt;sup&gt;1&lt;/sup&gt; for a footnote.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='table'>
+        <h2>&lt;table&gt; (Table)</h2>
+        <p>&lt;table&gt;: This tag defines the beginning of the table.<br>
+          &lt;thead&gt;: This is the table header section, where you usually place column headings.<br>
+          &lt;tr&gt;: Stands for "table row," and it defines a row in the table.<br>
+          &lt;th&gt;: Stands for "table header," and it defines a header cell in the table.<br>
+          &lt;tbody&gt;: This is the table body section, where the actual content of the table is placed.<br>
+          &lt;td&gt;: Stands for "table data," and it defines a standard cell in the table.<br>
+          &lt;tfoot&gt;: stands for "table footer" in HTML. It is used to group the footer content in a table</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Items&lt;/th&gt;
+      &lt;th scope="col"&gt;Expenditure&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;Donuts&lt;/th&gt;
+      &lt;td&gt;3,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;Stationery&lt;/th&gt;
+      &lt;td&gt;18,000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;Totals&lt;/th&gt;
+      &lt;td&gt;21,000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='template'>
+        <h2>&lt;template&gt; (Content Template)</h2>
+        <p>The element is used to declare HTML content that can be cloned and inserted into the document later using JavaScript. The content inside a &lt;template&gt; element is not rendered when the page loads and remains inert until activated. It is a way to define reusable content or content that should not be displayed initially.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;body&gt;
+  &lt;template id="myTemplate"&gt;
+    &lt;p&gt;This is a template content.&lt;/p&gt;
+  &lt;/template&gt;          
+  &lt;button onclick="showTemplate()"&gt;Show Template&lt;/button&gt;          
+  &lt;script&gt;
+    function showTemplate() {
+      // Clone the template content and append it to the body
+      const template = document.getElementById('myTemplate');
+      const clone = document.importNode(template.content, true);
+      document.body.appendChild(clone);
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='textarea'>
+        <h2>&lt;textarea&gt; (Textarea)</h2>
+        <p>The element is used to create a multiline text input control in HTML. It allows users to enter and edit longer blocks of text and is commonly used in forms where users need to provide comments, descriptions, or other free-form text.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Textarea Example&lt;/title&gt;
+    &lt;style&gt;
+      /* Optional: Apply some styles for better appearance */
+      textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;label for="message"&gt;Enter your message:&lt;/label&gt;
+    &lt;textarea id="message" name="message" rows="4" placeholder="Type your message here..."&gt;&lt;/textarea&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='time'>
+        <h2>&lt;time&gt; (Date Time)</h2>
+        <p>The <time> element is used to represent a specific period in time or a range of time in a machine-readable format. It is typically used to mark up dates, times, or durations and can include the <span id=attr-datetime class="attr">datetime</span> attribute to provide additional information for parsing.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p&gt;The conference starts at &lt;time datetime="2023-11-20T09:00"&gt;9:00 AM&lt;/time&gt;.&lt;/p&gt;
+&lt;p&gt;This document was last updated on &lt;time datetime="2023-11-20T15:30:00+00:00"&gt;November 20, 2023, 3:30 PM UTC&lt;/time&gt;.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='title'>
+        <h2>&lt;title&gt; (Document Title)</h2>
+        <p>The element is used to define the title of an HTML document. It is placed within the &lt;head&gt; section of the document and represents the title that appears in the browser's title bar or tab. The text within the element is also used by search engines for indexing and displaying search results.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;head&gt;
+  &lt;title&gt;Document Title Example&lt;/title&gt;
+&lt;/head&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='track'>
+        <h2>&lt;track&gt; (Embed Text Track)</h2>
+        <p> The element is used to specify timed text tracks for media elements such as &lt;audio&gt; and &lt;video&gt;. It is commonly used for closed captions, subtitles, or other textual information that is synchronized with the media content.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;video controls&gt;
+  &lt;source src="example.mp4" type="video/mp4"&gt;
+  &lt;track src="captions.vtt" kind="captions" srclang="en" label="English"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='ul'>
+        <h2>&lt;ul&gt; (Unordered List)</h2>
+        <p> The element is used to create an unordered list in HTML. An unordered list typically consists of a series of list items &lt;li&gt; that are preceded by bullet points. It is commonly used to represent a list of items with no particular order or sequence.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h2&gt;Fruits&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+  &lt;li&gt;Orange&lt;/li&gt;
+&lt;/ul&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='var'>
+        <h2>&lt;var&gt; (Variable)</h2>
+        <p>The element is used to define the name of a variable in a mathematical expression or programming context. It is often used to represent a placeholder for a variable or to highlight a variable within a sentence or paragraph.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+            &lt;p&gt;In programming, you can declare a variable like &lt;code&gt;var &lt;var&gt;myVariable&lt;/var&gt; = 10;&lt;/code&gt;.&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+      <section id='video'>
+        <h2>&lt;video&gt; (Video)</h2>
+        <p>The element is used to embed video content in HTML documents. It supports various video formats, and it allows for controls such as play, pause, and volume. You can include one or more &lt;source&gt; elements within the &lt;video&gt; element to provide different video formats for better browser compatibility.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;h2&gt;Sample Video&lt;/h2&gt;
+&lt;video width="640" height="360" controls&gt;
+  &lt;source src="sample.mp4" type="video/mp4"&gt;
+  &lt;source src="sample.webm" type="video/webm"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id='wbr'>
+        <h2>&lt;wbr&gt; (Word Break Opportunity)</h2>
+        <p>The element is used to suggest a possible word break in a long string of text without adding a visible character. It is particularly useful for preventing long words or strings of characters from overflowing beyond the boundaries of their container. The browser can choose an appropriate place to break the word if needed.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <code class="language-html">
+            &lt;p&gt;This is a longwordthatmayneedtobebroken using &lt;wbr&gt;the &lt;wbr&gt;&lt;wbr&gt; element.&lt;/p&gt;
+          </code>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"
+    integrity="sha512-9khQRAUBYEJDCDVP2yw3LRUQvjJ0Pjx0EShmaQjcHa6AXiOv6qHQu9lCAIR8O+/D8FtaCoJ2c0Tf9Xo7hYH01Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+    integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

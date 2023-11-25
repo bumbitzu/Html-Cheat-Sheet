@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Global Attributes</h1>
+    <p id="main-menu"><a href="index.html">Main Menu</a><p>
+  </header>
+  <main>
+    <div id="up">
+      <a href="#"><img src="./resources/img/up-arrow.png" title="up"/></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#accesskey">accesskey</a></li>
+        <li><a href="#autocapitalize">autocapitalize</a></li>
+        <li><a href="#autofocus">autofocus</a></li>
+        <li><a href="#class">class</a></li>
+        <li><a href="#contenteditable">contenteditable</a></li>
+        <li><a href="#data">data-*</a></li>
+        <li><a href="#dir">dir</a></li>
+        <li><a href="#draggable">draggable</a></li>
+        <li><a href="#enterkeyhint">enterkeyhint</a></li>
+        <li><a href="#hidden">hidden</a></li>
+        <li><a href="#id">id</a></li>
+        <li><a href="#inert">inert</a></li>
+        <li><a href="#inputmode">inputmode</a></li>
+        <li><a href="#is">is</a></li>
+        <li><a href="#itemid">itemid</a></li>
+        <li><a href="#itemprop">itemprop</a></li>
+        <li><a href="#itemref">itemref</a></li>
+        <li><a href="#itemscope">itemscope</a></li>
+        <li><a href="#itemtype">itemtype</a></li>
+        <li><a href="#lang">lang</a></li>
+        <li><a href="#nonce">nonce</a></li>
+        <li><a href="#part">part</a></li>
+        <li><a href="#popover">popover</a></li>
+        <li><a href="#slot">slot</a></li>
+        <li><a href="#spellcheck">spellcheck</a></li>
+        <li><a href="#style">style</a></li>
+        <li><a href="#tabindex">tabindex</a></li>
+        <li><a href="#title">title</a></li>
+        <li><a href="#translate">translate</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <section id="accesskey">
+        <h2>accesskey (Accesskey)</h2>
+        <p>The attribute is used in HTML to assign a keyboard shortcut to an element. It allows users to activate or focus on an element using a specific key or key combination.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;button accesskey="b"&gt;Click me&lt;/button&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id="autocapitalize">
+        <h2>autocapitalize (Autocapitalize)</h2>
+        <p>The attribute is used in HTML to control whether the text in an element should be automatically capitalized. It is especially useful for mobile devices where automatic capitalization may occur, and this attribute allows developers to override or adjust that behavior.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;input type="text" autocapitalize="words" /&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="autofocus">
+        <h2>autofocus (Autofocus)</h2>
+        <p>The attribute is used in HTML to automatically focus on an element when a web page loads. This can be particularly useful for improving user experience by directing the initial focus to a specific input field or interactive element.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;input type="text" autofocus /&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="class">
+        <h2>class (Class)</h2>
+        <p>The attribute is a fundamental HTML attribute used to assign one or more class names to an HTML element. Classes are typically used to apply styles or to group elements with similar behavior in CSS and JavaScript.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div class="container"&gt;
+  &lt;p class="highlight"&gt;This is a highlighted paragraph.&lt;/p&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="contenteditable">
+        <h2>contenteditable (Contenteditable)</h2>
+        <p> The attribute is used in HTML to make the content of an element editable by the user. When set to "true," it allows users to modify the text or content directly within the specified element, making it useful for creating interactive and editable regions on a webpage.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div contenteditable="true"&gt;
+  This content can be edited by the user.
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="data">
+        <h2>data-* (Data)</h2>
+        <p>The <span id="attr-data" class="attr">data-*</span> attributes are a group of attributes in HTML that allow developers to store custom data private to the page or application. These attributes can be used to store information that is not intended for visual presentation but may be useful for scripting or styling purposes.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div data-product-id="123" data-price="29.99" data-category="electronics"&gt;
+  &lt;!-- Content of the div --&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id="dir">
+        <h2>dir (Direction)</h2>
+        <p>The attribute is used in HTML to specify the text direction for the content of an element. It is particularly important in supporting languages that are written from right to left (RTL), such as Arabic or Hebrew, or left to right (LTR), such as English.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p dir="rtl"&gt;This text is written from right to left.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="draggable">
+        <h2>draggable (Draggable)</h2>
+        <p>The draggable attribute is used in HTML to make an element draggable by the user. When set to "true," it enables the user to interact with the element using drag-and-drop functionality, which can be useful for creating interactive interfaces.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div draggable="true" ondragstart="dragStart(event)"&gt;Drag me!&lt;/div&gt;
+&lt;script&gt;
+  function dragStart(event) {
+    event.dataTransfer.setData("text", event.target.textContent);
+  }
+&lt;/script&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="enterkeyhint">
+        <h2>enterkeyhint (Enterkeyhint)</h2>
+        <p>The attribute is an enumerated attribute defining what action label (or icon) to present for the enter key on virtual keyboards.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;input enterkeyhint="go" /&gt;
+&lt;p contenteditable enterkeyhint="go"&gt;https://example.org&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="hidden">
+        <h2>hidden (Hidden)</h2>
+        <p>The attribute is a global attribute in HTML used to indicate that an element should not be displayed. When applied to an element, it hides the element from the user interface, making it invisible on the web page.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p hidden&gt;This paragraph is hidden.&lt;/p&gt;  
+          </code></pre>
+        </div>
+      </section>
+      <section id="id">
+        <h2>id (Id)</h2>
+        <p>The attribute is a fundamental HTML attribute used to uniquely identify an element within a document. The value of the id attribute must be unique across the entire HTML document and is often used as a reference point for CSS styling and JavaScript interactions.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div id="header"&gt;
+  &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="inert">
+        <h2>inert (Inert)</h2>
+        <p>The attribute is not a global attribute on its own but is part of the Inert Attribute Module. It is used to mark parts of the DOM (Document Object Model) as inert, meaning that the marked elements and their descendants should be treated as if they are not interactive and cannot be the target of user actions such as clicking or focus.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div inert&gt;
+  &lt;p&gt;This content is inert and cannot be interacted with.&lt;/p&gt;
+  &lt;button onclick="alert('Button clicked')"&gt;Click me&lt;/button&gt;
+&lt;/div&gt;  
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="inputmode">
+        <h2>inputmode (Input Mode)</h2>
+        <p>The attribute is used in HTML to provide a hint to browsers about the type of virtual keyboard to display on devices that support touch or virtual keyboards. It helps improve the user experience by suggesting the appropriate keyboard layout based on the expected input.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;input type="text" inputmode="numeric" /&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="is">
+        <h2>is (Is)</h2>
+        <p>The attribute allows you to specify that a standard HTML element should behave like a defined custom built-in element. This attribute can only be used if the specified custom element name has been successfully defined in the current document, and extends the element type it is being applied to.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p is="word-count"&gt;&lt;/p&gt;
+          </code></pre>
+          <pre><code class="language-javascript">
+// Create a class for the element
+class WordCount extends HTMLParagraphElement {
+  constructor() {
+    // Always call super first in constructor
+    super();
+
+    // Constructor contents omitted for brevity
+    // …
+  }
+}
+
+// Define the new element
+customElements.define("word-count", WordCount, { extends: "p" });
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="itemid">
+        <h2>itemid (Item Id)</h2>
+        <p>The attribute is part of the HTML Microdata specification and is used to associate a unique identifier with an item. Microdata is a way to embed machine-readable data into HTML documents to provide additional context to web content, particularly for search engines.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div itemscope itemtype="https://schema.org/Person" itemid="#person1"&gt;
+  &lt;span itemprop="name"&gt;John Doe&lt;/span&gt;
+  &lt;span itemprop="jobTitle"&gt;Software Engineer&lt;/span&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id="itemprop">
+        <h2>itemprop (Item Property)</h2>
+        <p>The attribute is part of the HTML Microdata specification. It is used to define the properties (attributes or values) of an item within an HTML document, providing a way to embed structured data into web content. This structured data can be used by search engines and other applications to better understand the content.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div itemscope itemtype="https://schema.org/Person"&gt;
+  &lt;span itemprop="name"&gt;John Doe&lt;/span&gt;
+  &lt;span itemprop="jobTitle"&gt;Software Engineer&lt;/span&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="itemref">
+        <h2>itemref (Item Reference)</h2>
+        <p>The attribute is part of the HTML Microdata specification. It is used to reference properties of an item that are defined outside the element's subtree. This attribute is helpful when you want to associate properties with an item that are defined in separate parts of the HTML document.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div itemscope itemtype="https://schema.org/Person" itemid="#person1" itemref="additionalInfo"&gt;
+  &lt;span itemprop="name"&gt;John Doe&lt;/span&gt;
+&lt;/div&gt;
+&lt;div id="additionalInfo"&gt;
+  &lt;span itemprop="jobTitle"&gt;Software Engineer&lt;/span&gt;
+&lt;/div&gt;  
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="itemscope">
+        <h2>itemscope (Item Scope)</h2>
+        <p>The attribute is part of the HTML Microdata specification. It is used to define the scope of an item within an HTML document. When applied to an element, it indicates that the element represents a specific item, and the properties of that item are defined within the element's subtree using the itemprop attribute.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div itemscope itemtype="https://schema.org/Person"&gt;
+  &lt;span itemprop="name"&gt;John Doe&lt;/span&gt;
+  &lt;span itemprop="jobTitle"&gt;Software Engineer&lt;/span&gt;
+&lt;/div&gt;  
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="itemtype">
+        <h2>itemtype (Item Type)</h2>
+        <p>The attribute is part of the HTML Microdata specification. It is used to define the type of an item within an HTML document, providing a way to embed structured data into web content. The item type is typically associated with a specific vocabulary or schema (e.g., schema.org) that defines the properties and values applicable to that type.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;div itemscope itemtype="https://schema.org/Person"&gt;
+  &lt;span itemprop="name"&gt;John Doe&lt;/span&gt;
+  &lt;span itemprop="jobTitle"&gt;Software Engineer&lt;/span&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="lang">
+        <h2>lang (Language)</h2>
+        <p>The attribute is a global attribute in HTML used to specify the primary language for the content of an element. It helps browsers and other user agents present the content in the correct language, and it is particularly important for multilingual websites and accessibility.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p lang="en"&gt;This is a paragraph in English.&lt;/p&gt;
+&lt;p lang="es"&gt;Este es un párrafo en español.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id="nonce">
+        <h2>nonce (Nonce)</h2>
+        <p>The attribute is not a global HTML attribute on its own, but it is commonly used as part of security mechanisms, specifically in the context of Content Security Policy (CSP). In CSP, a nonce is a "number used once" that is included in a script tag to enable the execution of specific inline scripts while maintaining security.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;script nonce="randomlyGeneratedValue"&gt;
+    // Inline script with nonce
+    console.log('This script is allowed to execute due to the nonce.');
+&lt;/script&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="part">
+        <h2>part (Part)</h2>
+        <p>The attribute is part of the CSS Shadow Parts specification, which allows you to selectively style and theme specific pieces of a web component from the outside. It's commonly used to style different "parts" of a web component independently, providing a way to apply styles to specific elements within a component without affecting others.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;style&gt;<code class="language-css">
+  /* Define styles for a specific part */
+  my-element::part(header) {
+    background-color: #3498db;
+    color: white;
+  }</code>
+&lt;/style&gt;
+
+&lt;my-element part="header"&gt;
+  &lt;!-- Content of the header part --&gt;
+&lt;/my-element&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="popover">
+        <h2>popover (Popover)</h2>
+        <p>Popover elements are hidden via display: none until opened via an invoking/control element (i.e. a &lt;button&gt; or &lt;input type="button"&gt; with a popovertarget attribute) or a HTMLElement.showPopover() call.<br>
+          When open, popover elements will appear above all other elements in the top layer, and won't be influenced by parent elements' position or overflow styling.<br>
+          A popover attribute can have values "auto" (default) or "manual"</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;button popovertarget="my-popover"&gt;Open Popover&lt;/button&gt;
+&lt;div popover id="my-popover"&gt;Greetings, one and all!&lt;/div&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="slot">
+        <h2>slot (Slot)</h2>
+        <p>The attribute is part of the Web Components standard and is used to define insertion points within a web component's template where specific content can be distributed. It allows developers to create reusable components with customizable content insertion points.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;!-- Custom element definition --&gt;
+&lt;custom-element&gt;
+  &lt;!-- Content placed inside the slot will be assigned to the slot named "my-slot" --&gt;
+  &lt;div slot="my-slot"&gt;This content goes into the slot named "my-slot".&lt;/div&gt;
+&lt;/custom-element&gt;
+          </code></pre>
+          <pre><code class="language-html">
+&lt;!-- Custom element template (inside the &lt;custom-element&gt; definition) --&gt;
+&lt;template id="custom-element-template"&gt;
+  &lt;div&gt;
+    &lt;!-- Content from the slot with the name "my-slot" will be placed here --&gt;
+    &lt;slot name="my-slot"&gt;&lt;/slot&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="spellcheck">
+        <h2>spellcheck (Spellcheck)</h2>
+        <p>The attribute is used to enable or disable spell checking for the content within an editable element, such as a text area or an input field.
+          <br><br>Values:<br><br>
+          spellcheck="true": Spell checking is enabled.<br>
+          spellcheck="false": Spell checking is disabled.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;textarea spellcheck="true"&gt;This is editable content with spell checking enabled.&lt;/textarea&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id="style">
+        <h2>style (Style)</h2>
+        <p>The attribute is a global attribute in HTML that is used to apply inline styles to an HTML element. It allows you to define CSS rules directly within the HTML tag, providing a way to customize the appearance of individual elements.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p style="color: red; font-size: 16px;"&gt;This is a red paragraph with a font size of 16 pixels.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="tabindex">
+        <h2>tabindex (Tabindex)</h2>
+        <p>The attribute is a global attribute in HTML used to specify the tab order of an element when navigating through a webpage using the keyboard's "Tab" key. It is commonly used to enhance the accessibility and usability of web pages for users who navigate using keyboard input.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;input type="text" tabindex="1" /&gt;
+&lt;button tabindex="2"&gt;Click me&lt;/button&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="title">
+        <h2>title (Title)</h2>
+        <p>The attribute is a global attribute in HTML used to provide additional information about an element. It is commonly used to add a tooltip or descriptive text that appears when a user hovers over the element with their mouse. The content of the title attribute should be concise and relevant to the element it describes.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;a href="https://www.example.com" title="Visit Example Website"&gt;Visit Example&lt;/a&gt;
+          </code></pre>
+        </div>
+      </section>
+
+      <section id="translate">
+        <h2>translate (Translate)</h2>
+        <p>The attribute is a global attribute in HTML that is used to specify whether the content of an element should be translated when the page is localized or internationalized. It can be applied to any HTML element.<br><br>
+          Values<br><br>
+          translate="yes": The content should be translated (default behavior if the attribute is not present).<br>
+          translate="no": The content should not be translated.</p>
+        <div class="code">
+          <pre><code class="language-html">
+&lt;p translate="no"&gt;This paragraph should not be translated.&lt;/p&gt;
+&lt;p&gt;This paragraph can be translated.&lt;/p&gt;
+          </code></pre>
+        </div>
+      </section>
+    </div>
+  </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"
+    integrity="sha512-9khQRAUBYEJDCDVP2yw3LRUQvjJ0Pjx0EShmaQjcHa6AXiOv6qHQu9lCAIR8O+/D8FtaCoJ2c0Tf9Xo7hYH01Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+    integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+</body>
+</html>

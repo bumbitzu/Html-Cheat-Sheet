@@ -1,0 +1,111 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+#up{
+    position: fixed;
+    right:1%;
+    bottom: 1%;
+    z-index: 10;
+    opacity: 50%;
+}
+#up:hover{
+    opacity: 100%;
+}
+#up img{
+    width: 50px;
+}
+#main-menu{
+    position: relative;
+    display: inline;
+    left:23%;
+}
+#main-menu a{
+    font-size: x-large;
+    color:coral;
+    font-weight: bold;
+}
+#main-menu a:hover{
+    color: red;
+}
+li a{
+    width: 200%;
+    text-decoration: none;
+    color: rgb(0, 131, 70);
+    font-family: monospace;
+    font-size: large;
+    font-weight: 900;
+}
+li a:hover{
+    color: rgb(255, 0, 234);
+}
+header{
+    display: inline;
+    text-align: center;
+}
+h1{
+    position: relative;
+    width: 80%;
+    left: 20%;
+    text-align: center;
+}
+main{
+    width:100%;
+
+}
+#content{
+    
+    width: 80%;
+    position: relative;
+    left:20%;
+    
+
+}
+nav{
+    width:20%;
+    height: 100%;
+    background-color:rgb(212, 252, 255);
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 10;
+    top: 0;
+}
+ul{
+
+    text-align: center;
+
+}
+ul li{
+    width: 120%;
+    position: relative;
+    left:-20%;
+    list-style: none;
+    margin-left: 0;
+    border-bottom: 1px solid;
+}
+ul li:first-child{
+    border-top: 1px solid;
+}
+ul li:hover{
+    background-color: rgb(186, 235, 198);                                                                           
+}
+section{
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    background-color: rgb(186, 235, 198);
+    margin: 20px auto 20px auto;
+    top:40px;
+}
+.code{
+    max-width: 90%;
+    width: fit-content;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+

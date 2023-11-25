@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Attributes</h1>
+    <p id="main-menu"><a href="index.html">Main Menu</a><p>
+  </header>
+  <main>
+    <div id="up">
+      <a href="#"><img src="./resources/img/up-arrow.png" title="up"/></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#accept">accept</a></li>
+        <li><a href="#autocomplete">autocomplete</a></li>
+        <li><a href="#capture">capture</a></li>
+        <li><a href="#crossorigin">crossorigin</a></li>
+        <li><a href="#dirname">dirname</a></li>
+        <li><a href="#disabled">disabled</a></li>
+        <li><a href="#elementtiming">elementtiming</a></li>
+        <li><a href="#for">for</a></li>
+        <li><a href="#max">max</a></li>
+        <li><a href="#maxlength">maxlength</a></li>
+        <li><a href="#min">min</a></li>
+        <li><a href="#minlength">minlength</a></li>
+        <li><a href="#multiple">multiple</a></li>
+        <li><a href="#pattern">pattern</a></li>
+        <li><a href="#placeholder">placeholder</a></li>
+        <li><a href="#readonly">readonly</a></li>
+        <li><a href="#rel">rel</a></li>
+        <li><a href="#required">required</a></li>
+        <li><a href="#size">size</a></li>
+        <li><a href="#step">step</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <section id='accept'>
+        <h2>accept</h2>
+        <p>The atribute is used in HTML forms with the &lt;input type="file"&gt; element. It specifies the types of files that the server can accept. It helps in restricting the types of files that users can select when choosing a file to upload.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+&lt;form action="/upload" method="post" enctype="multipart/form-data"&gt;
+  &lt;label for="fileInput"&gt;Select a file:&lt;/label&gt;
+  &lt;input type="file" id="fileInput" name="file" accept=".pdf, .doc, .docx"&gt;
+  &lt;input type="submit" value="Upload"&gt;
+&lt;/form&gt;
+            </code></pre>
+        </div>
+      </section>
+
+      <section id='autocomplete'>
+        <h2>autocomplete</h2>
+        <p>The attribute is used in HTML forms to control whether the browser should automatically complete a form field or not. It can be applied to various form elements, such as &lt;input&gt; and &lt;form&gt;. When set to "on," the browser can automatically fill in the values for a user based on their previous input or choices. When set to "off," the browser should not automatically complete the field.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username" autocomplete="on"&gt;
+  
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+  &lt;input type="password" id="password" name="password" autocomplete="off"&gt;
+  
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </code></pre>
+        </div>
+      </section>
+
+      <section id='capture'>
+        <h2>capture</h2>
+        <p>The attribute is used in HTML forms with the &lt;input type="file"&gt; element. It is specifically used for mobile devices with cameras. When set to "camera," it indicates that the user should capture a photo or video directly from the device's camera. This is commonly used in combination with the accept attribute to specify the media types allowed.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+&lt;form action="/upload" method="post" enctype="multipart/form-data"&gt;
+  &lt;label for="photoInput"&gt;Capture a photo:&lt;/label&gt;
+  &lt;input type="file" id="photoInput" name="photo" capture="camera" accept="image/*"&gt;
+  &lt;input type="submit" value="Upload"&gt;
+&lt;/form&gt;
+            </code></pre>
+        </div>
+      </section>
+
+      <section id='crossorigin'>
+        <h2>crossorigin</h2>
+        <p>The attribute is used in HTML with elements that load external resources, such as &lt;img&gt;, &lt;script&gt;, and &lt;link&gt;. It is used to control how the browser handles cross-origin requests for the specified resource. Cross-origin requests occur when a web page requests a resource (like an image or a script) from a different domain than the one that served the web page.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+&lt;img src="https://example.com/image.jpg" alt="An image" crossorigin="anonymous"&gt;  
+            </code></pre>
+        </div>
+      </section>
+
+      <section id='dirname'>
+        <h2>dirname</h2>
+        <p>The attribute is used in HTML with the &lt;input type="text"&gt; element to specify the direction in which the text should be submitted when the form is submitted. It is particularly useful for text input fields in languages that are written from right to left (RTL), such as Arabic or Hebrew. The dirname attribute helps in ensuring that the entered text is submitted in the correct direction.</p>
+        <h3>Example</h3>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;!-- Setting dirname for an RTL language --&gt;
+  &lt;input type="text" id="username" name="username" dirname="rtl"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </code></pre>
+        </div>
+      </section>
+        <section id='disabled'>
+          <h2>disabled</h2>
+          <p>The attribute is a common HTML attribute used to disable user interaction with an element. It can be applied to various HTML elements, such as form controls (&lt;input&gt;, &lt;button&gt;, etc.), links (&lt;a&gt;), and more. When an element is disabled, it is typically displayed in a way that indicates it cannot be interacted with, and user actions (such as clicks or keyboard input) are ignored.</p>
+          <h3>Example</h3>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+&lt;button disabled&gt;Click me (disabled)&lt;/button&gt;
+              </code></pre>
+          </div>
+          <p>In this example, the disabled attribute is applied to a &lt;button&gt; element, making it unclickable.</p>
+          <div class="code">
+            <pre><code class="language-html">
+&lt;input type="text" value="Cannot edit" disabled&gt;
+            </code></pre>
+          </div>
+          <p>In this example, the disabled attribute is applied to an &lt;input&gt; element of type text, making it read-only and preventing users from editing the content.</p>
+        </section>
+  
+        <section id='elementtiming'>
+          <h2>elementtiming</h2>
+          <p>The attribute is used to indicate that an element is flagged for tracking by PerformanceObserver objects using the "element" type. This attribute may be applied to &lt;img&gt;, &lt;image&gt; elements inside an &lt;svg&gt;, poster images of &lt;video&gt; elements, elements which have a background-image, and elements containing text nodes, such as a &lt;p&gt;.</p>
+          <h3>Example</h3>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+&lt;img alt="Alt for a main blog post image" src="my-massive-image.jpg" elementtiming="Main image"&gt;
+&lt;p elementtiming="important-text"&gt;Some very important information.&lt;/p"&gt;
+              </code></pre>
+          </div>
+        </section>
+  
+        <section id='for'>
+          <h2>for</h2>
+          <p> The attribute specifies which form element a label is bound to. It takes the value of the id attribute of the associated form element. When a user clicks on the label, it focuses or activates the associated form control.</p>
+          <h3>Example</h3>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;
+  
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+  &lt;input type="password" id="password" name="password"&gt;
+  
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+              </code></pre>
+          </div>
+        </section>
+  
+        <section id='max'>
+          <h2>max</h2>
+          <p>The attribute is commonly used with form controls in HTML, such as &lt;input type="number"&gt;, &lt;input type="date"&gt;, and others. It specifies the maximum value that a user can input or select in the associated form control. For example, with &lt;input type="number" max="10"&gt;, a user cannot enter a number greater than 10.</p>
+          <h3>Example</h3>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+&lt;label for="quantity"&gt;Quantity:&lt;/label&gt;
+&lt;input type="number" id="quantity" name="quantity" max="100"&gt;
+              </code></pre>
+          </div>
+          <p>In this example, the max attribute is set to 100, indicating that the user can input a quantity up to a maximum value of 100.</p>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+&lt;label for="birthdate"&gt;Select your birthdate:&lt;/label&gt;
+&lt;input type="date" id="birthdate" name="birthdate" max="2005-01-01"&gt;
+              </code></pre>
+          </div>
+          <p>Here, the max attribute is used with a date input, specifying that the user cannot select a date later than January 1, 2005.</p>
+        </section>  
+  
+        <section id='maxlength'>
+          <h2>maxlength</h2>
+          <p>The attribute is used with form controls in HTML, such as &lt;input type="text"&gt; and &lt;textarea&gt;. It specifies the maximum number of characters that a user can input into the associated field. This attribute is particularly useful for limiting the length of text input, for example, in a comment field or a username input.</p>
+          <h3>Example</h3>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username" maxlength="20"&gt;
+              </code></pre>
+          </div>
+          <p>In this example, the maxlength attribute is set to 20, indicating that the user can input up to a maximum of 20 characters for the username.</p>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+&lt;label for="message"&gt;Your Message:&lt;/label&gt;
+&lt;textarea id="message" name="message" maxlength="200"&gt;&lt;/textarea&gt;</code></pre>
+          </div>
+          <p>Here, the maxlength attribute is used with a &lt;textarea&gt;, limiting the user to entering a message with a maximum of 200 characters.</p>
+        </section>
+          <section id='min'>
+            <h2>min</h2>
+            <p>The attribute is commonly used with form controls in HTML, such as &lt;input type="number"&gt;, &lt;input type="date"&gt;, and others. It specifies the minimum value that a user can input or select in the associated form control. For example, with &lt;input type="number" min="0"&gt;, a user cannot enter a number less than 0.</p>
+            <h3>Example</h3>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;label for="quantity"&gt;Quantity:&lt;/label&gt;
+&lt;input type="number" id="quantity" name="quantity" min="1"&gt;
+                </code></pre>
+            </div>
+            <p>In this example, the min attribute is set to 1, indicating that the user can input a quantity of at least 1.</p>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;label for="birthdate"&gt;Select your birthdate:&lt;/label&gt;
+&lt;input type="date" id="birthdate" name="birthdate" min="1900-01-01"&gt;
+                </code></pre>
+            </div>
+            <p>Here, the min attribute is used with a date input, specifying that the user cannot select a date earlier than January 1, 1900.</p>
+          </section>
+    
+          <section id='minlength'>
+            <h2>minlength</h2>
+            <p> The attribute is used with form controls in HTML, such as &lt;input type="text"&gt; and &lt;textarea&gt;. It specifies the minimum number of characters that a user must input into the associated field. This attribute is useful for enforcing a minimum length for text input, ensuring that users provide a certain amount of information.</p>
+            <h3>Example</h3>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;label for="password"&gt;Password:&lt;/label&gt;
+&lt;input type="password" id="password" name="password" minlength="8"&gt;
+                </code></pre>
+            </div>
+            <p>In this example, the minlength attribute is set to 8, indicating that the user must input a password with a minimum length of 8 characters.</p>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;label for="comment"&gt;Your Comment:&lt;/label&gt;
+&lt;textarea id="comment" name="comment" minlength="10"&gt;&lt;/textarea&gt;
+                </code></pre>
+            </div>
+            <p>Here, the minlength attribute is used with a &lt;textarea&gt;, specifying that the user must provide a comment with a minimum length of 10 characters.</p>
+          </section>
+    
+          <section id='multiple'>
+            <h2>multiple</h2>
+            <p>The attribute is used with certain form elements in HTML, such as &lt;input type="file"&gt; and &lt;select&gt;. Its behavior depends on the element it is used with.</p>
+            <h3>Example</h3>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;input type="file" id="fileInput" name="files" multiple&gt;
+                </code></pre>
+            </div>
+            <p>With &lt;input type="file"&gt;: When the multiple attribute is present, it allows users to select multiple files for upload in a single file input field.</p>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;select id="fruitSelect" name="fruits" multiple&gt;
+  &lt;option value="apple"&gt;Apple&lt;/option&gt;
+  &lt;option value="banana"&gt;Banana&lt;/option&gt;
+  &lt;option value="orange"&gt;Orange&lt;/option&gt;
+&lt;/select&gt;
+                </code></pre>
+            </div>
+            <p>With &lt;select&gt;: When the multiple attribute is present, it allows users to select multiple options in a dropdown list.</p>
+          </section>
+    
+          <section id='pattern'>
+            <h2>pattern</h2>
+            <p>The attribute is used with form controls in HTML, such as &lt;input type="text"&gt;. It specifies a regular expression pattern that the user-entered value must match for the form to be submitted successfully. This attribute is often used for validating and enforcing specific formats for user input, such as phone numbers, email addresses, or custom patterns.</p>
+            <h3>Example</h3>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;label for="phoneNumber"&gt;Phone Number:&lt;/label&gt;
+&lt;input type="text" id="phoneNumber" name="phoneNumber" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890"&gt;
+                </code></pre>
+            </div>
+            <p>In this example, the pattern attribute is set to a regular expression \d{3}-\d{3}-\d{4}, enforcing a pattern for a phone number in the format of 123-456-7890.</p>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="example@example.com"&gt;
+                </code></pre>
+            </div>
+            <p>Here, the pattern attribute is used with an &lt;input&gt; of type email, ensuring that the entered value follows a typical email address format.</p>
+          </section>
+    
+          <section id='placeholder'>
+            <h2>placeholder</h2>
+            <p>The attribute is used with form controls in HTML, such as &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt;. It provides a hint or a short description to the user about the expected format or type of data to be entered into the form field. This is particularly useful for improving user experience by giving users guidance on what information is expected.</p>
+            <h3>Example</h3>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username" placeholder="Enter your username"&gt;
+                </code></pre>
+            </div>
+            <p>In this example, the placeholder attribute is used with a text input, providing a hint to the user about what information should be entered.</p>
+            <div class="code">
+              <pre>
+                <code class="language-html">
+&lt;label for="message"&gt;Your Message:&lt;/label&gt;
+&lt;textarea id="message" name="message" placeholder="Type your message here"&gt;&lt;/textarea&gt;
+                </code></pre>
+            </div>
+            <p>Here, the placeholder attribute is used with a &lt;textarea&gt;, suggesting to the user what kind of content is expected in the message.</p>
+          </section>
+
+            <section id='readonly'>
+              <h2>readonly</h2>
+              <p>The attribute is used with form controls in HTML, such as &lt;input&gt; and &lt;textarea&gt;. When applied, it makes the associated form control read-only, meaning that the user can see the content but cannot modify or interact with it. This attribute is often used when you want to display information that should not be edited by the user.</p>
+              <h3>Example</h3>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;label for="readOnlyInput"&gt;Read-Only Input:&lt;/label&gt;
+&lt;input type="text" id="readOnlyInput" name="readOnlyInput" value="This is read-only" readonly&gt;
+                  </code></pre>
+              </div>
+              <p>In this example, the readonly attribute is applied to a text input, preventing the user from modifying the content.</p>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;label for="readOnlyTextarea"&gt;Read-Only Textarea:&lt;/label&gt;
+&lt;textarea id="readOnlyTextarea" name="readOnlyTextarea" readonly&gt;This is a read-only textarea.&lt;/textarea&gt;
+                  </code></pre>
+              </div>
+              <p>Here, the readonly attribute is used with a &lt;textarea&gt;, making it read-only.</p>
+            </section>
+      
+            <section id='rel'>
+              <h2>rel</h2>
+              <p>The attribute is commonly used with the &lt;a&gt; (anchor) and &lt;link&gt; elements in HTML. It specifies the relationship between the current document and the linked resource. The rel attribute is part of the HTML standard, and its values indicate the type or nature of the relationship.</p>
+              <h3>Example</h3>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;a href="https://www.example.com" rel="nofollow"&gt;Visit Example.com&lt;/a&gt;
+                  </code></pre>
+              </div>
+              <p>In this example, the rel attribute is set to "nofollow," indicating to search engines that they should not follow the link.</p>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+                  </code></pre>
+              </div>
+              <p>Here, the rel attribute is used to specify that the linked resource is a stylesheet.</p>
+            </section>
+      
+            <section id='required'>
+              <h2>required</h2>
+              <p>The attribute is used with form controls in HTML, such as &lt;input&gt;, &lt;select&gt;, and &lt;textarea&gt;. When applied, it specifies that the associated form control must be filled out by the user before submitting the form. If a required field is left empty, the form won't be submitted, and the user will typically receive a validation error.</p>
+              <h3>Example</h3>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username" required&gt;
+                  </code></pre>
+              </div>
+              <p>In this example, the required attribute is applied to a text input, indicating that the user must enter a value for the "Username" field before submitting the form.</p>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;label for="country"&gt;Select your country:&lt;/label&gt;
+&lt;select id="country" name="country" required&gt;
+  &lt;option value=""&gt;Select...&lt;/option&gt;
+  &lt;option value="us"&gt;United States&lt;/option&gt;
+  &lt;option value="ca"&gt;Canada&lt;/option&gt;
+  &lt;!-- Additional country options --&gt;
+&lt;/select&gt;
+                  </code></pre>
+              </div>
+              <p>Here, the required attribute is used with a &lt;select&gt; element, ensuring that the user selects a country before submitting the form.</p>
+            </section>
+            <section id='size'>
+              <h2>size</h2>
+              <p>The attribute, when used with a &lt;select&gt; element, determines the number of rows that should be visible in the dropdown list. This is useful when you want to control the height of the dropdown and make more options visible at once.</p>
+              <h3>Example</h3>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;label for="fruitSelect"&gt;Choose a Fruit:&lt;/label&gt;
+&lt;select id="fruitSelect" name="fruit" size="4"&gt;
+  &lt;option value="apple"&gt;Apple&lt;/option&gt;
+  &lt;option value="banana"&gt;Banana&lt;/option&gt;
+  &lt;option value="orange"&gt;Orange&lt;/option&gt;
+  &lt;option value="grape"&gt;Grape&lt;/option&gt;
+  &lt;option value="strawberry"&gt;Strawberry&lt;/option&gt;
+&lt;/select&gt;
+                  </code></pre>
+              </div>
+            </section>
+      
+            <section id='step'>
+              <h2>step</h2>
+              <p>The step attribute is used to define the granularity or interval of values that are valid for the input field. It affects both the arrow buttons for incrementing and decrementing (applicable to number inputs) and the visual markers for slider positions (applicable to range inputs).</p>
+              <h3>Example</h3>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;label for="quantity"&gt;Quantity:&lt;/label&gt;
+&lt;input type="number" id="quantity" name="quantity" step="5" min="0" max="100"&gt;
+                  </code></pre>
+              </div>
+              <p>In this example, the step attribute is set to 5, meaning that users can only input values in increments of 5 (e.g., 0, 5, 10, 15, ...).</p>
+              <div class="code">
+                <pre>
+                  <code class="language-html">
+&lt;label for="slider"&gt;Select a Value:&lt;/label&gt;
+&lt;input type="range" id="slider" name="slider" min="0" max="100" step="10"&gt;
+                  </code></pre>
+              </div>
+              <p>Here, the step attribute is used with a range input, specifying that the slider should move in increments of 10.</p>
+            </section>
+
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"
+    integrity="sha512-9khQRAUBYEJDCDVP2yw3LRUQvjJ0Pjx0EShmaQjcHa6AXiOv6qHQu9lCAIR8O+/D8FtaCoJ2c0Tf9Xo7hYH01Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+    integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
